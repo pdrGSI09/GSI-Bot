@@ -1,3 +1,4 @@
+![Building recovery](https://github.com/yukosky/twrp_g5s/workflows/Building%20recovery/badge.svg)
 # Building recovery online made easy #
 
 ### What this is ###
