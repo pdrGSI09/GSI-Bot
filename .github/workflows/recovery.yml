@@ -15,14 +15,11 @@ on:
 
 
 env:
-  MANIFEST: git://github.com/PitchBlackRecoveryProject/manifest_pb.git -b android-9.0
-  DEVICE: sakura
-  DT_LINK: https://github.com/LinuxPanda/android_recovery_xiaomi_rosy
-  DT_PATH: device/xiaomi/rosy
-  KERNEL_LINK: https://github.com/Pulkit077/kernel_xiaomi_rosy
-  KERNEL_PATH: kernel/xiaomi/rosy
+  MANIFEST: git://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git -b twrp-7.1
+  DEVICE: montana
+  DT_LINK: https://github.com/TeamWin/android_device_motorola_montana
+  DT_PATH: device/xiaomi/montana
   TARGET: recoveryimage
-  TZ: Asia/Kolkata
 
 jobs:
   build:
@@ -43,18 +40,17 @@ jobs:
          run: |
              mkdir work
              cd work
-             repo init -u $MANIFEST --depth=1 --groups=all,-notdefault,-device,-darwin,-x86,-mips
+             repo init -u $MANIFEST
              repo sync -j4
-             git clone $DT_LINK --depth=1 --single-branch $DT_PATH
-             git clone $KERNEL_LINK --depth=1 --single-branch $KERNEL_PATH
+             git clone $DT_LINK
              
        - name: Build
          run: |
               cd work
-              . build/envsetup.sh &&lunch omni_$DEVICE-eng &&export ALLOW_MISSING_DEPENDENCIES=true && mka $TARGET
+              . build/envsetup.sh && lunch omni_$DEVICE-eng && export ALLOW_MISSING_DEPENDENCIES=true && export LC_ALL=C && mka $TARGET
              
        - name: Upload recovery image
          run: |
               cd work/out/target/product/$DEVICE
               curl -sL https://git.io/file-transfer | sh
-              ./transfer bit *$DEVICE*.zip    
+              ./transfer bit recovery.img
