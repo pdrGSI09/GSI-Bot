@@ -15,11 +15,8 @@ on:
 
 
 env:
-  MANIFEST: git://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git -b twrp-7.1
-  DEVICE: montana
-  DT_LINK: https://github.com/TeamWin/android_device_motorola_montana
-  DT_PATH: device/xiaomi/montana
-  TARGET: recoveryimage
+  ALLOW_MISSING_DEPENDENCIES: true
+  LC_ALL: C
 
 jobs:
   build:
@@ -38,19 +35,24 @@ jobs:
             
        - name: Sync recovery source and device tree
          run: |
+             git clone https://github.com/akhilnarang/scripts scripts
+             cd scripts
+             sudo bash setup/android_build_env.sh && sudo bash setup/install_android_sdk.sh && cd ../
              mkdir work
              cd work
-             repo init -u $MANIFEST
-             repo sync -j4
-             git clone $DT_LINK
+             repo init --depth=1 -u git://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git -b twrp-7.1
+             repo sync
+             mkdir device && cd device && mkdir motorola && git clone https://github.com/TeamWin/android_device_motorola_montana montana
+             cd ../../../../
              
        - name: Build
          run: |
               cd work
-              . build/envsetup.sh && lunch omni_$DEVICE-eng && export ALLOW_MISSING_DEPENDENCIES=true && export LC_ALL=C && mka $TARGET
+              . build/envsetup.sh; lunch omni_montana-eng
+              mka $TARGET
              
        - name: Upload recovery image
          run: |
-              cd work/out/target/product/$DEVICE
+              cd work/out/target/product/montana
               curl -sL https://git.io/file-transfer | sh
               ./transfer bit recovery.img
