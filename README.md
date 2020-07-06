@@ -1,6 +1,4 @@
 ![Motorola - G5S (Montana)](https://github.com/yukosky/runner-android_twrp/workflows/Motorola%20-%20G5S%20(Montana)/badge.svg)
-![OnePlus - 5T (Dumpling)](https://github.com/yukosky/runner-android_twrp/workflows/OnePlus%20-%205T%20(Dumpling)/badge.svg)
-![Samsung - S7 (Herolte) (Testing)](https://github.com/yukosky/runner-android_twrp/workflows/Samsung%20-%20S7%20(Herolte)%20(Testing)/badge.svg)
 # Building recovery online made easy #
 
 ### What this is ###

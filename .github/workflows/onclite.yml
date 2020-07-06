@@ -1,4 +1,4 @@
-name: Motorola - G5S (Montana)
+name: Xiaomi - Redmi Note 7/Y3 (onclite)
 
 on:
 #  release:
@@ -40,19 +40,19 @@ jobs:
               sudo bash setup/android_build_env.sh && sudo bash setup/install_android_sdk.sh && cd ../
               mkdir work
               cd work
-              repo init --depth=1 -u git://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git -b twrp-7.1
+              repo init -u git://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git -b twrp-9.0
               repo sync
-              mkdir device && cd device && mkdir motorola && cd motorola && git clone https://github.com/TeamWin/android_device_motorola_montana montana
+              mkdir device && cd device && mkdir xiaomi && cd xiaomi && git clone https://github.com/TeamWin/android_device_xiaomi_onclite onclite
               cd ../../../../
              
        - name: Build
          run: |
               cd work
-              . build/envsetup.sh; lunch omni_montana-eng
+              . build/envsetup.sh; lunch omni_onclite-eng
               mka recoveryimage
              
        - name: Upload recovery image
          run: |
-              cd work/out/target/product/montana
+              cd work/out/target/product/onclite
               curl -sL https://git.io/file-transfer | sh
               ./transfer bit recovery.img
