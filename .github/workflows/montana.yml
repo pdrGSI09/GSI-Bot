@@ -43,6 +43,13 @@ jobs:
               repo sync
               mkdir device && cd device && mkdir motorola && cd motorola && git clone https://github.com/yukosky/android_device_motorola_montana $DEVICE
               cd ../../../../
+              
+       - name: QCOM Common Fix
+         run: |
+              cd work/device/qcom/common/cryptfs_hw/
+              ls
+              echo "LOCAL_LDLIBS := -llog" >> Android.mk
+              cd ../../../../
        
        - name: Build
          run: |
