@@ -42,6 +42,10 @@ jobs:
               repo sync
               mkdir device && cd device && mkdir motorola && cd motorola && git clone https://github.com/yukosky/android_device_motorola_montana $DEVICE
               cd ../../../../
+       
+       - name: Fixing issue with QCOM Common Tree
+         run: |
+              cd work; git clone https://gist.github.com/yukosky/61b3b85a55cff55098daa0d75f162a1b qcommon; rm -rf device/qcom/common/cryptfs_hw/Android.mk; mv qcommon/Android.mk device/qcom/common/cryptfs_hw/Android.mk; cd ../../../../
              
        - name: Build
          run: |
