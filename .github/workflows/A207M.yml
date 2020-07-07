@@ -1,4 +1,4 @@
-name: Xiaomi - Redmi Note 7/Y3 (onclite)
+name: Samsung - A30S (IDK) (Testing)
 
 on:
 #  release:
@@ -42,17 +42,17 @@ jobs:
               cd work
               repo init -u git://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git -b twrp-9.0
               repo sync
-              mkdir device && cd device && mkdir xiaomi && cd xiaomi && git clone https://github.com/TeamWin/android_device_xiaomi_onclite onclite
+              mkdir device && cd device && mkdir samsung && cd samsung && git clone https://github.com/yukosky/android_device_samsung_A207M A207M
               cd ../../../../
              
        - name: Build
          run: |
               cd work
-              . build/envsetup.sh; lunch omni_onclite-eng
-              mka recoveryimage
+              . build/envsetup.sh; lunch omni_A207M-eng
+              mka adbd recoveryimage
              
        - name: Upload recovery image
          run: |
-              cd work/out/target/product/onclite
+              cd work/out/target/product/land
               curl -sL https://git.io/file-transfer | sh
               ./transfer bit recovery.img
