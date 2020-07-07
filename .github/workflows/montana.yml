@@ -42,7 +42,7 @@ jobs:
               cd work
               repo init --depth=1 -u git://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git -b twrp-9.0
               repo sync
-              mkdir device && cd device && mkdir motorola && cd motorola && git clone https://github.com/TeamWin/android_device_motorola_montana montana
+              mkdir device && cd device && mkdir motorola && cd motorola && git clone https://github.com/yukosky/android_device_motorola_montana-1 montana
               cd ../../../../
              
        - name: Build
