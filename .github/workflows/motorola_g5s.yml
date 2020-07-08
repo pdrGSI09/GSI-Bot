@@ -1,0 +1,46 @@
+name: Motorola - G5S (Montana)
+
+on:
+  watch:
+    types: [started]
+
+env:
+  ALLOW_MISSING_DEPENDENCIES: true
+  LC_ALL: C
+  DEVICE: montana
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+       - name: Checkout
+         uses: actions/checkout@master
+
+       - name: Initializing environment
+         run: |
+               sudo -E apt-get -qq update
+               sudo -E apt-get -qq install bc zip libstdc++6 python gcc clang libssl-dev repo flex aria2
+               sudo apt-get install default-jdk android-tools-adb bison build-essential curl flex g++-multilib gcc-multilib gnupg gperf imagemagick lib32readline-dev lib32z1-dev liblz4-tool libssl-dev libwxgtk3.0-dev libxml2 libxml2-utils lzop pngcrush yasm zlib1g-dev python3 python3-dev kernel-package bzip2 g++-multilib gcc-multilib make git libfdt-dev ccache flex g++-multilib gcc-multilib gnupg gperf imagemagick lib32ncurses5-dev libsdl1.2-dev libssl-dev rsync schedtool squashfs-tools xsltproc openjdk-8-jdk repo byacc m4 libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev libffi-dev libsqlite3-dev wget libbz2-dev python3-pip
+               sudo curl --create-dirs -L -o /usr/local/bin/repo -O -L https://storage.googleapis.com/git-repo-downloads/repo
+               sudo chmod a+rx /usr/local/bin/repo
+            
+       - name: Sync recovery source and device tree
+         run: |
+              mkdir work
+              cd work
+              repo init --depth=1 -u git://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git -b twrp-7.1
+              repo sync
+              mkdir device && cd device && mkdir motorola && cd motorola && git clone https://github.com/yukosky/android_device_motorola_montana $DEVICE
+              cd ../../
+       
+       - name: Build
+         run: |
+              cd work
+              . build/envsetup.sh; lunch omni_$DEVICE-eng
+              mka recoveryimage
+             
+       - name: Upload recovery image
+         run: |
+              cd work/out/target/product/$DEVICE
+              curl -sL https://git.io/file-transfer | sh
+              ./transfer bit recovery.img
