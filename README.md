@@ -1,5 +1,5 @@
 ![Motorola - G5S (Montana)](https://github.com/YuMi-Project/runner-android_twrp/workflows/Motorola%20-%20G5S%20(Montana)/badge.svg)
-# Just a Runner to Compile TWRP for Devices - Thx Jamie #
+# Just a Runner to Compile SHRP for Devices - Thx Jamie #
 
 ### What this is ###
 
