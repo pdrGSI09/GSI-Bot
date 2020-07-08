@@ -43,21 +43,17 @@ jobs:
               repo sync
               mkdir device && cd device && mkdir motorola && cd motorola && git clone https://github.com/yukosky/android_device_motorola_montana $DEVICE
               cd ../../../../
+              . build/envsetup.sh; lunch omni_$DEVICE-eng
               
        - name: QCOM Common Fix
          run: |
-              tree -aI work/vendor/
-              echo "----------------"
-              tree -aI work/device/
               cd work/device/qcom/common/cryptfs_hw/
-              ls
               echo "LOCAL_LDLIBS := -llog" >> Android.mk
               cd ../../../../
        
        - name: Build
          run: |
               cd work
-              . build/envsetup.sh; lunch omni_$DEVICE-eng
               mka recoveryimage
              
        - name: Upload recovery image
