@@ -18,6 +18,9 @@ jobs:
          uses: actions/checkout@master
 
        - name: Initializing telegram bot
+         env:
+              TOKEN: ${{ secrets.TOKEN }}
+
          run: |
               chmod +x initial.sh
               ./initial.sh
@@ -32,6 +35,9 @@ jobs:
               sudo bash setup.sh
        
        - name: Execute Shell Script
+         env:
+              TOKEN: ${{ secrets.TOKEN }}
+              
          run: |
                chmod +x havocos.sh
                ./havocos.sh
