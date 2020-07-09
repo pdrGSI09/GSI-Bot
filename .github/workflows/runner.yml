@@ -1,4 +1,4 @@
-name: HavocOS GSI
+name: GSI - Erfan
 
 on:
   watch:
@@ -22,6 +22,7 @@ jobs:
               TOKEN: ${{ secrets.TOKEN }}
 
          run: |
+              sudo install telegram /usr/bin
               chmod +x $ROM/initial.sh
               . $ROM/initial.sh
        

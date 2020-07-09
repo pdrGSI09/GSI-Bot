@@ -1,6 +1,5 @@
 #!/bin/bash
 # Sync
-sudo install telegram /usr/bin
 telegram -M "HavocOS: Build started"
 SYNC_START=$(date +"%s")
 
