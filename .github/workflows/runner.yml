@@ -1,8 +1,6 @@
 name: GSI - Erfan
 
-on:
-  watch:
-    types: [started]
+on: [push]
     
 env:
   ROM: Pixel
