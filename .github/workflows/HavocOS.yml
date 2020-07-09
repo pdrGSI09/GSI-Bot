@@ -1,0 +1,43 @@
+name: HavocOS GSI
+
+on:
+  watch:
+    types: [started]
+    
+env:
+  ROM: HavocOS
+  MIR: wet
+  TZ: America/Sao_Paulo
+  # Sao_Paulo = São Paulo, Brazil
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+       - name: Checkout
+         uses: actions/checkout@master
+           
+       - name: Initializing environment
+         run: |
+            sudo -E apt-get -qq update
+            sudo -E apt-get -qq install git openjdk-8-jdk wget expect
+       
+       - name: Clone ErfanGSI Source Code
+         run: git clone https://github.com/yukosky/ErfanGSIs -b runner
+       
+       - name: Setting up ErfanGSI requirements
+         run: |
+              sudo chmod -R 777 ErfanGSIs
+              cd ErfanGSIs
+              sudo bash setup.sh
+       
+       - name: Execute Shell Script
+         run:  |
+               chmod +x havocos.sh
+               ./havocos.sh
+               
+       - name: Print build info
+         run: |
+              cat ErfanGSIs/output/*Aonly*.txt
+              echo "- Aonly Up | AB Above -"
+              cat ErfanGSIs/output/*-AB-*.txt
