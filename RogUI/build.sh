@@ -21,8 +21,8 @@ sudo ./ErfanGSIs/url2GSI.sh $ROM_LINK RogUI
                
     curl -sL https://git.io/file-transfer | sh
                
-    xz -z -f -e -9 $ROM-AB-$sourcever2-$date2-ErfanGSI-YuMiGSI.7z *-AB-*.img
-    xz -z -f -e -9 $ROM-Aonly-$sourcever2-$date2-ErfanGSI-YuMiGSI.7z *-Aonly-*.img
+    xz -z -f -e -9 *-AB-*.img
+    xz -z -f -e -9 *-Aonly-*.img
 
     SYNC_END=$(date +"%s")
     SYNC_DIFF=$((SYNC_END - SYNC_START))
@@ -31,8 +31,8 @@ sudo ./ErfanGSIs/url2GSI.sh $ROM_LINK RogUI
     SYNC_START=$(date +"%s")
     telegram -M "RogUI: Upload started"
 
-    ./transfer $MIR $ROM-Aonly-$sourcever2-$date2-ErfanGSI-YuMiGSI.7z
-    ./transfer $MIR $ROM-AB-$sourcever2-$date2-ErfanGSI-YuMiGSI.7z
+    ./transfer $MIR $ROM-Aonly-$sourcever2-$date2-ErfanGSI-YuMiGSI.img.xz
+    ./transfer $MIR $ROM-AB-$sourcever2-$date2-ErfanGSI-YuMiGSI.img.xz
 
     SYNC_END=$(date +"%s")
     SYNC_DIFF=$((SYNC_END - SYNC_START))
