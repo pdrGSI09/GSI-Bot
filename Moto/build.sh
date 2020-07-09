@@ -37,9 +37,3 @@ sudo ./ErfanGSIs/url2GSI.sh $ROM_LINK Moto
     SYNC_END=$(date +"%s")
     SYNC_DIFF=$((SYNC_END - SYNC_START))
     telegram -M "Moto: Uploading completed successfully in $((SYNC_DIFF / 60)) minute(s) and $((SYNC_DIFF % 60)) seconds"
-    
-    if [ -t "*../ErfanGSIs/output/.7z" ]; then
-       telegram -M "Moto successfully built! Check console."
-    else
-       telegram -M "Moto unsuccessful built! Check console.
-    fi
