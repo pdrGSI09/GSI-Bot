@@ -37,3 +37,9 @@ sudo ./ErfanGSIs/url2GSI.sh $ROM_LINK Generic:HavocOS
     SYNC_END=$(date +"%s")
     SYNC_DIFF=$((SYNC_END - SYNC_START))
     telegram -M "HavocOS: Uploading completed successfully in $((SYNC_DIFF / 60)) minute(s) and $((SYNC_DIFF % 60)) seconds"
+    
+    if [ -t "*.7z" ]; then
+       telegram -M "HavocOS successfully built! Check console."
+    else
+       telegram -M "HavocOS unsuccessful built! Check console.
+    fi

@@ -37,3 +37,9 @@ sudo ./ErfanGSIs/url2GSI.sh $ROM_LINK Pixel
     SYNC_END=$(date +"%s")
     SYNC_DIFF=$((SYNC_END - SYNC_START))
     telegram -M "Pixel: Uploading completed successfully in $((SYNC_DIFF / 60)) minute(s) and $((SYNC_DIFF % 60)) seconds"
+    
+    if [ -t "*.7z" ]; then
+       telegram -M "Pixel successfully built! Check console."
+    else
+       telegram -M "Pixel unsuccessful built! Check console.
+    fi
