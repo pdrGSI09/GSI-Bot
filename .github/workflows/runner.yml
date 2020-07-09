@@ -25,7 +25,7 @@ jobs:
               . $ROM/initial.sh
        
        - name: Clone ErfanGSI Source Code
-         run: git clone https://github.com/erfanoabdi/ErfanGSIs
+         run: git clone https://github.com/yukosky/ErfanGSIs -b runner
        
        - name: Setting up ErfanGSI requirements
          run: |
