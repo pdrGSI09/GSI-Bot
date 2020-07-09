@@ -5,8 +5,8 @@ on:
     types: [started]
     
 env:
-  ROM: Moto
-  ROM_LINK: https://mirrors.lolinet.com/firmware/moto/lake/official/RETAIL/LAKE_RETAIL_9.0_PPWS29.98-111-9_subsidy-DEFAULT_regulatory-DEFAULT_CFC.xml.zip
+  ROM: Pixel
+  ROM_LINK: https://dl.google.com/developers/android/rvc/images/factory/walleye-rpb2.200611.009-factory-97f69fa0.zip
   MIR: wet
   TZ: America/Sao_Paulo
 jobs:
