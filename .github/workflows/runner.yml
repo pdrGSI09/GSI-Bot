@@ -5,7 +5,7 @@ on:
     types: [started]
     
 env:
-  ROM: HavocOS
+  ROM: Moto
   ROM_LINK: https://mirrors.lolinet.com/firmware/moto/lake/official/RETAIL/LAKE_RETAIL_9.0_PPWS29.98-111-9_subsidy-DEFAULT_regulatory-DEFAULT_CFC.xml.zip
   MIR: wet
   TZ: America/Sao_Paulo
