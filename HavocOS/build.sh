@@ -4,7 +4,7 @@ sudo install telegram /usr/bin
 telegram -M "HavocOS: Build started"
 SYNC_START=$(date +"%s")
 
-sudo ./ErfanGSIs/url2GSI.sh https://ufpr.dl.sourceforge.net/project/havoc-os/tulip/Havoc-OS-v3.7-20200708-tulip-Official.zip Generic:HavocOS
+sudo ./ErfanGSIs/url2GSI.sh $ROM_LINK Generic:HavocOS
     mkdir final
 
     SYNC_END=$(date +"%s")
@@ -12,7 +12,7 @@ sudo ./ErfanGSIs/url2GSI.sh https://ufpr.dl.sourceforge.net/project/havoc-os/tul
     telegram -M "HavocOS: Build completed successfully in $((SYNC_DIFF / 60)) minute(s) and $((SYNC_DIFF % 60)) seconds"
 
     SYNC_START=$(date +"%s")
-    telegram -M "HavocOS: Zip started"
+    telegram -M "HavocOS: Zipping output started"
 
     export date2=`date +%Y%m%d%H%M`
     export sourcever2=`cat ./ErfanGSIs/ver`

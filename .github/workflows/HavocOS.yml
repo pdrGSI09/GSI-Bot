@@ -6,9 +6,9 @@ on:
     
 env:
   ROM: HavocOS
+  ROM_LINK: https://mirrors.lolinet.com/firmware/moto/lake/official/RETAIL/LAKE_RETAIL_9.0_PPWS29.98-111-9_subsidy-DEFAULT_regulatory-DEFAULT_CFC.xml.zip
   MIR: wet
   TZ: America/Sao_Paulo
-  # Sao_Paulo = São Paulo, Brazil
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -22,8 +22,8 @@ jobs:
               TOKEN: ${{ secrets.TOKEN }}
 
          run: |
-              chmod +x initial.sh
-              ./initial.sh
+              chmod +x $ROM/initial.sh
+              . $ROM/initial.sh
        
        - name: Clone ErfanGSI Source Code
          run: git clone https://github.com/yukosky/ErfanGSIs -b runner
@@ -39,8 +39,8 @@ jobs:
               TOKEN: ${{ secrets.TOKEN }}
               
          run: |
-               chmod +x havocos.sh
-               ./havocos.sh
+               chmod +x $ROM/build.sh
+               . $ROM/build.sh
                
        - name: Print build info
          run: |
