@@ -16,11 +16,11 @@ jobs:
     steps:
        - name: Checkout
          uses: actions/checkout@master
-           
-       - name: Initializing environment
+
+       - name: Initializing telegram bot
          run: |
-            sudo -E apt-get -qq update
-            sudo -E apt-get -qq install git openjdk-8-jdk wget expect
+              chmod +x initial.sh
+              ./initial.sh
        
        - name: Clone ErfanGSI Source Code
          run: git clone https://github.com/yukosky/ErfanGSIs -b runner
@@ -32,7 +32,7 @@ jobs:
               sudo bash setup.sh
        
        - name: Execute Shell Script
-         run:  |
+         run: |
                chmod +x havocos.sh
                ./havocos.sh
                
