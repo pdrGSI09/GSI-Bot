@@ -38,7 +38,7 @@ sudo ./ErfanGSIs/url2GSI.sh $ROM_LINK ZUI
     SYNC_DIFF=$((SYNC_END - SYNC_START))
     telegram -M "ZUI: Uploading completed successfully in $((SYNC_DIFF / 60)) minute(s) and $((SYNC_DIFF % 60)) seconds"
 
-    if [ -t "*.7z" ]; then
+    if [ -t "../ErfanGSIs/output/*.7z" ]; then
        telegram -M "ZUI successfully built! Check console."
     else
        telegram -M "ZUI unsuccessful built! Check console.
