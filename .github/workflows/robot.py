@@ -27,7 +27,11 @@ with pyrogram.Client('bot', os.getenv('API_ID'), os.getenv('API_HASH'), bot_toke
 
 <b>Thanks to: <a href="https://github.com/erfanoabdi/ErfanGSIs/graphs/contributors">Contributors List</a>
 
-<a href="https://github.com/erfanoabdi/ErfanGSIs">Ported using ErfanGSIs Tool - YuKo's Based</a>""",
+<b>YuMi GSIs</b> - Group: @yumigsis2
+<b>YuMi GSIs</b> - Channel: @yuvendors
+<b>Project Treble Experience </b> - Channel: @trebleexperience 
+
+<a href="https://github.com/yukosky/ErfanGSIs">Ported using ErfanGSIs Tool - YuKo's Based</a>""",
         chat_id=os.getenv('CHAT_ID'),
         parse_mode="html",
         disable_web_page_preview=True
