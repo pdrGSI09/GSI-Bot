@@ -1,6 +1,8 @@
 name: GSI - Erfan
 
-on: [push]
+on:
+  watch:
+    types: [started]
     
 env:
   ROM: AncientOS
@@ -58,4 +60,4 @@ jobs:
 
          run: |
               python .github/workflows/robot.py
-              
+
