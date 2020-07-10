@@ -3,7 +3,7 @@
 telegram -M "Evolution X: Build started"
 SYNC_START=$(date +"%s")
 
-sudo ./ErfanGSIs/url2GSI.sh $ROM_LINK Evolution X
+sudo ./ErfanGSIs/url2GSI.sh $ROM_LINK Generic:EvolutionX
     mkdir final
 
     SYNC_END=$(date +"%s")
