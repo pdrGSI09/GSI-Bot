@@ -4,7 +4,7 @@ telegram -M "LineageOS: Sync started"
 SYNC_START=$(date +"%s")
 
 sudo -E apt-get -qq update
-sudo -E apt-get -qq install git openjdk-8-jdk wget expect
+sudo -E apt-get -qq install git openjdk-8-jdk wget expect python3-pip python3
 pip install pyrogram tgcrypto
 
 SYNC_END=$(date +"%s")

@@ -13,10 +13,19 @@ sudo ./ErfanGSIs/url2GSI.sh $ROM_LINK Generic:LineageOS
     SYNC_START=$(date +"%s")
     telegram -M "LineageOS: Zipping output started"
 
+    telegram -M "LineageOS: Using payload (Just a test)"
+    mkdir tmp; cd tmp
+    mv ErfanGSIs/output/*.tgz tmp/firmware.tgz
+    cp firmware.tgz firmware.zip; rm -rf firmware.tgz
+    zip -d firmware.tgz; mv payload.bin ../ErfanGSIs/payload/payload.bin;
+    cd ../ErfanGSIs/payload/ && python3 payload_dumper.py payload.bin
+    mv out/system.img ../../system.img; cd ../../system.img
+    gzip -f system.img; sudo ./url2GSI.sh system.img.gz Generic:LineageOS
+
     export date2=`date +%Y%m%d%H%M`
     export sourcever2=`cat ./ErfanGSIs/ver`
     sudo chmod -R 777 ErfanGSIs/output
-               
+    
     cd ErfanGSIs/output/
                
     curl -sL https://git.io/file-transfer | sh
