@@ -46,7 +46,7 @@ jobs:
               
          run: |
                chmod +x $ROM/build.sh
-               . $ROM/build.
+               . $ROM/build.sh
                
        - name: Copy and rename A-Only build info
          run: cp ErfanGSIs/output/*Aonly*.txt Aonly.txt
