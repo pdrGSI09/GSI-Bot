@@ -3,7 +3,7 @@
 telegram -M "LineageOS: Build started"
 SYNC_START=$(date +"%s")
 
-sudo ./ErfanGSIs/url2GSI.sh $ROM_LINK LineageOS
+sudo ./ErfanGSIs/url2GSI.sh $ROM_LINK Generic:LineageOS
     mkdir final
 
     SYNC_END=$(date +"%s")
