@@ -21,8 +21,8 @@ sudo ./ErfanGSIs/url2GSI.sh $ROM_LINK Generic:HavocOS
                
     curl -sL https://git.io/file-transfer | sh
                
-    xz -z -f -e -9 *-AB-*.img
-    xz -z -f -e -9 *-Aonly-*.img
+    zip -r $ROM-AB-$sourcever2-$date2-ErfanGSI-YuMiGSI.7z *-AB-*.img
+    zip -r $ROM-Aonly-$sourcever2-$date2-ErfanGSI-YuMiGSI.7z *-Aonly-*.img
 
     SYNC_END=$(date +"%s")
     SYNC_DIFF=$((SYNC_END - SYNC_START))
@@ -31,8 +31,8 @@ sudo ./ErfanGSIs/url2GSI.sh $ROM_LINK Generic:HavocOS
     SYNC_START=$(date +"%s")
     telegram -M "HavocOS: Upload started"
 
-    ./transfer $MIR $ROM-Aonly-$sourcever2-$date2-ErfanGSI-YuMiGSI.img.xz
-    ./transfer $MIR $ROM-AB-$sourcever2-$date2-ErfanGSI-YuMiGSI.img.xz
+    echo "::set-env name=DOWNLOAD_A::$(./transfer $MIR "$ZIP_NAME-Aonly-$sourcever2-$date2-ErfanGSI-YuMiGSI.7z" | grep -o -P '(?<=Download Link: )\S+')"
+    echo "::set-env name=DOWNLOAD_AB::$(./transfer $MIR "$ZIP_NAME-AB-$sourcever2-$date2-ErfanGSI-YuMiGSI.7z" | grep -o -P '(?<=Download Link: )\S+')"
 
     SYNC_END=$(date +"%s")
     SYNC_DIFF=$((SYNC_END - SYNC_START))

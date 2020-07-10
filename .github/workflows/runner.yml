@@ -5,7 +5,7 @@ on: [push]
 env:
   ROM: AncientOS
   ROM_LINK: https://ufpr.dl.sourceforge.net/project/ancientrom/mido/AncientOS-CIVILIZATION-v3.8-mido-PRIMEVAL-20200709-1544-GApps.zip
-  MIR: wet
+  MIR: gof
   TZ: America/Sao_Paulo
 jobs:
   build:
@@ -18,6 +18,11 @@ jobs:
        - name: Initializing telegram bot
          env:
               TOKEN: ${{ secrets.TOKEN }}
+
+       - name: Set up python
+         uses: actions/setup-python@v2
+         with:
+           python-version: '3.8.2'
 
          run: |
               sudo install telegram /usr/bin
@@ -39,10 +44,17 @@ jobs:
               
          run: |
                chmod +x $ROM/build.sh
-               . $ROM/build.sh
+               . $ROM/build.
                
-       - name: Print build info
+       - name: Copy and rename A-Only build info
+         run: cp ErfanGSIs/output/*Aonly*.txt Aonly.txt
+
+       - name: Send build info to Telegram
+         env:
+              CHAT_ID: ${{ secrets.CHAT_ID }}
+              TOKEN: ${{ secrets.TOKEN }}
+              API_ID: ${{ secrets.API_ID }}
+              API_HASH: ${{ secrets.API_HASH }}
+
          run: |
-              cat ErfanGSIs/output/*Aonly*.txt
-              echo "- Aonly Up | AB Above -"
-              cat ErfanGSIs/output/*-AB-*.txt
+              python .github/workflows/robot.py
