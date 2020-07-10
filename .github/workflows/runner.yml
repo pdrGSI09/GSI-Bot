@@ -15,14 +15,14 @@ jobs:
        - name: Checkout
          uses: actions/checkout@master
 
-       - name: Initializing telegram bot
-         env:
-              TOKEN: ${{ secrets.TOKEN }}
-
-       - name: Set up python
+        name: Set up python
          uses: actions/setup-python@v2
          with:
            python-version: '3.8.2'
+
+       - name: Initializing telegram bot
+         env:
+              TOKEN: ${{ secrets.TOKEN }}
 
          run: |
               sudo install telegram /usr/bin
