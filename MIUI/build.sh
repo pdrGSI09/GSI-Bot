@@ -31,8 +31,8 @@ sudo ./ErfanGSIs/url2GSI.sh $ROM_LINK MIUI
     SYNC_START=$(date +"%s")
     telegram -M "MIUI: Upload started"
 
-    echo "::set-env name=DOWNLOAD_A::$(./transfer $MIR "$ZIP_NAME-Aonly-$sourcever2-$date2-ErfanGSI-YuMiGSI.7z" | grep -o -P '(?<=Download Link: )\S+')"
-    echo "::set-env name=DOWNLOAD_AB::$(./transfer $MIR "$ZIP_NAME-AB-$sourcever2-$date2-ErfanGSI-YuMiGSI.7z" | grep -o -P '(?<=Download Link: )\S+')"
+    echo "::set-env name=DOWNLOAD_A::$(./transfer $MIR "$ROM-Aonly-$sourcever2-$date2-ErfanGSI-YuMiGSI.7z" | grep -o -P '(?<=Download Link: )\S+')"
+    echo "::set-env name=DOWNLOAD_AB::$(./transfer $MIR "$ROM-AB-$sourcever2-$date2-ErfanGSI-YuMiGSI.7z" | grep -o -P '(?<=Download Link: )\S+')"
 
     SYNC_END=$(date +"%s")
     SYNC_DIFF=$((SYNC_END - SYNC_START))
