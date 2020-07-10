@@ -3,8 +3,8 @@ name: GSI - Erfan
 on: [push]
 
 env:
-  ROM: EvolutionX
-  ROM_LINK: https://ufpr.dl.sourceforge.net/project/evolution-x/raphael/EvolutionX_4.5_raphael-10.0-20200707-0844-OFFICIAL.zip
+  ROM: PixelExperience
+  ROM_LINK: https://get.pixelexperience.org/RnRnSVlvUitTcU1RdnRUR3N5bGUzYnoxUHR1RnhMWTdPM3JxN2JNVmtJa1kzb0xBL0FDcjZ5eHQvTDBCVDJKcFZORU5iYUYybGhMQkFlZTRGT1BjcE5LQzdUOCtVSThVcEdLNmFvdW4vUFU9/PixelExperience_Plus_lavender-10.0-20200710-1255-OFFICIAL.zip
   MIR: gof
   TZ: America/Sao_Paulo
 jobs:
