@@ -3,7 +3,7 @@
 telegram -M "RogUI: Build started"
 SYNC_START=$(date +"%s")
 
-sudo ./ErfanGSIs/url2GSI.sh $ROM_LINK RogUI
+sudo ./ErfanGSIs/url2GSI.sh $ROM_LINK Generic:ExtendedUI
     mkdir final
 
     SYNC_END=$(date +"%s")
