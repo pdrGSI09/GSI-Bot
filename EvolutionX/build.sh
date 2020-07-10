@@ -3,7 +3,7 @@
 telegram -M "Evolution X: Build started"
 SYNC_START=$(date +"%s")
 
-sudo ./ErfanGSIs/url2GSI.sh $ROM_LINK Generic:EvolutionX
+sudo ./ErfanGSIs/url2GSI.sh $ROM_LINK EvolutionX
     mkdir final
 
     SYNC_END=$(date +"%s")
@@ -37,3 +37,4 @@ sudo ./ErfanGSIs/url2GSI.sh $ROM_LINK Generic:EvolutionX
     SYNC_END=$(date +"%s")
     SYNC_DIFF=$((SYNC_END - SYNC_START))
     telegram -M "Evolution X: Uploading completed successfully in $((SYNC_DIFF / 60)) minute(s) and $((SYNC_DIFF % 60)) seconds"
+    
