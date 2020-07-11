@@ -3,8 +3,8 @@ name: GSI - Erfan
 on: [push]
 
 env:
-  ROM: ZUI
-  ROM_LINK: https://qc4.androidfilehost.com/dl/HhUV2lwb8DCXoM1EHapEVA/1594538167/1899786940962598035/www.stockrom.net_ROM+Z6+PRO+L78051_ROW_SECURE_USER_Q00745.01_P_ROW_11.0.284_ST_190810_qpst.zip?
+  ROM: AICP
+  ROM_LINK: https://dwnld.aicp-rom.com/device/ginkgo/WEEKLY/aicp_ginkgo_q-15.0-WEEKLY-20200630.zip
   MIR: gof
   TZ: America/Sao_Paulo
 jobs:
