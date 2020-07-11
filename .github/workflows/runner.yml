@@ -3,8 +3,8 @@ name: GSI - Erfan
 on: [push]
 
 env:
-  ROM: DirtyUnicorn
-  ROM_LINK: https://download.dirtyunicorns.com/api/download/coral/Official/du_coral-v14.4-20200607-1420-OFFICIAL.zip
+  ROM: CorvusOS
+  ROM_LINK: https://ufpr.dl.sourceforge.net/project/corvus-os/phoenix/Corvus_v7.0-phoenix-Gapps-10072020-OFFICIAL-0751.zip
   MIR: gof
   TZ: America/Sao_Paulo
 jobs:
