@@ -5,9 +5,7 @@ SYNC_START=$(date +"%s")
 
 sudo -E apt-get -qq update
 sudo -E apt-get -qq install git openjdk-8-jdk wget expect yarn
-yarn
 pip install pyrogram tgcrypto
-yarn build
 
 SYNC_END=$(date +"%s")
 SYNC_DIFF=$((SYNC_END - SYNC_START))
