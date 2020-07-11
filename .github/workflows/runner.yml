@@ -3,8 +3,8 @@ name: GSI - Erfan
 on: [push]
 
 env:
-  ROM: PixelExperience
-  ROM_LINK: https://master.dl.sourceforge.net/project/yumi-project/gsi/canarydontdownpls/PixelExperience_Plus_jasmine_sprout-10.0-20200620-1954-OFFICIAL.zip
+  ROM: POSP
+  ROM_LINK: https://ufpr.dl.sourceforge.net/project/posp/raphael/potato_raphael-10-20200430-croquette.v3.1.7%2B12.Official.zip
   MIR: gof
   TZ: America/Sao_Paulo
 jobs:
