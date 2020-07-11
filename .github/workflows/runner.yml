@@ -3,8 +3,8 @@ name: GSI - Erfan
 on: [push]
 
 env:
-  ROM: JoyUI
-  ROM_LINK: https://ota-1256119282.file.myqcloud.com//SKW-A0/skywalker-ota-eng.buildfarm_2019-12-11_skywalker_mp_ota7_20190910.zip
+  ROM: CorvusOS
+  ROM_LINK: https://ufpr.dl.sourceforge.net/project/corvus-os/lavender/Corvus_v7.0-lavender-10072020-OFFICIAL-1514.zip
   MIR: gof
   TZ: America/Sao_Paulo
 jobs:
@@ -58,14 +58,3 @@ jobs:
 
          run: |
               python .github/workflows/robot.py
-
-       - name: deploy file to server
-         uses: wlixcc/SFTP-Deploy-Action@v1.0
-         with:
-          username: 'pything'
-          server: '${{ secrets.SERVER_IP }}'
-          ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
-          local_path: 'ErfanGSIs/output/'
-          remote_path: '/home/pfs/project/yumi-project/gsi/JoyUI/20200711'
-          args: 'put *.7z'
-
