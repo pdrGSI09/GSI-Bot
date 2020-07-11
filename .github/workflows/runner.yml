@@ -15,6 +15,11 @@ jobs:
        - name: Checkout
          uses: actions/checkout@master
 
+       - name: Set up python
+         uses: actions/setup-python@v2
+         with:
+           python-version: '3.8.2'
+
        - name: Initializing telegram bot
          env:
               TOKEN: ${{ secrets.TOKEN }}
@@ -23,11 +28,6 @@ jobs:
               sudo install telegram /usr/bin
               chmod +x $ROM/initial.sh
               . $ROM/initial.sh
-
-       - name: Set up python
-         uses: actions/setup-python@v2
-         with:
-           python-version: '3.8.2'
        
        - name: Clone ErfanGSI Source Code
          run: git clone https://github.com/yukosky/ErfanGSIs -b runner
