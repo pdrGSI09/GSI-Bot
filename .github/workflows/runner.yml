@@ -3,8 +3,8 @@ name: GSI - Erfan
 on: [push]
 
 env:
-  ROM: DirtyUnicorn
-  ROM_LINK: https://download.dirtyunicorns.com/api/download/coral/Official/du_coral-v14.4-20200607-1420-OFFICIAL.zip
+  ROM: EvolutionX
+  ROM_LINK: https://ufpr.dl.sourceforge.net/project/evolution-x/x2/EvolutionX_4.5_x2-10.0-20200711-1308-OFFICIAL.zip
   MIR: gof
   TZ: America/Sao_Paulo
 jobs:
