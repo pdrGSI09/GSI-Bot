@@ -3,8 +3,8 @@ name: GSI - Erfan
 on: [push]
 
 env:
-  ROM: ExtendedUI
-  ROM_LINK: https://ufpr.dl.sourceforge.net/project/extendedui/ginkgo/ExtendedUI_1.2.1_ginkgo-10.0-20200613-1338-OFFICIAL.zip
+  ROM: EvolutionX
+  ROM_LINK: https://ufpr.dl.sourceforge.net/project/ancientrom/greatlte/AncientOS-CIVILIZATION-v3.8-greatlte-PRIMEVAL-20200710-0042-GApps.zip
   MIR: gof
   TZ: America/Sao_Paulo
 jobs:
