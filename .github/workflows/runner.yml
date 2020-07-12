@@ -3,8 +3,8 @@ name: GSI - Erfan
 on: [push]
 
 env:
-  ROM: Generic
-  ROM_LINK: https://www.googleapis.com/drive/v3/files/1yDCB3lf5-vcH_sm8nH9rElcIQA0qj1RO?alt=media&key=AIzaSyAPeiAtskDMGvYJqAUb00tTQ3P90ER-LP8
+  ROM: EvolutionX
+  ROM_LINK: https://ufpr.dl.sourceforge.net/project/evolution-x/jasmine_sprout/EvolutionX_4.5_jasmine_sprout-10.0-20200712-0534-OFFICIAL.zip
   MIR: gof
   TZ: America/Sao_Paulo
 jobs:
