@@ -3,8 +3,8 @@ name: GSI - Erfan
 on: [push]
 
 env:
-  ROM: EvolutionX
-  ROM_LINK: https://ufpr.dl.sourceforge.net/project/evolution-x/twolip/EvolutionX_4.5_twolip-10.0-20200711-0649-OFFICIAL.zip
+  ROM: HavocOS
+  ROM_LINK: https://ufpr.dl.sourceforge.net/project/havoc-os/phoenix/Havoc-OS-v3.7-20200711-phoenix-Official-GApps.zip
   MIR: gof
   TZ: America/Sao_Paulo
 jobs:
