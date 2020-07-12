@@ -3,8 +3,8 @@ name: GSI - Erfan
 on: [push]
 
 env:
-  ROM: EvolutionX
-  ROM_LINK: https://ufpr.dl.sourceforge.net/project/evolution-x/jasmine_sprout/EvolutionX_4.5_jasmine_sprout-10.0-20200712-0534-OFFICIAL.zip
+  ROM: MIUI
+  ROM_LINK: https://ufpr.dl.sourceforge.net/project/xiaomi-eu-multilang-miui-roms/xiaomi.eu/MIUI-WEEKLY-RELEASES/20.7.9/xiaomi.eu_multi_HMNote7_20.7.9_v12-10.zip
   MIR: gof
   TZ: America/Sao_Paulo
 jobs:
