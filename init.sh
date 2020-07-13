@@ -1,6 +1,6 @@
 #!/bin/bash
 # Sync
-telegram -M "$ROM: Sync started"
+telegram -M "$ROM: Configure Environment"
 SYNC_START=$(date +"%s")
 
 sudo -E apt-get -qq update
