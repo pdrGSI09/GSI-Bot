@@ -4,7 +4,7 @@ Rebased by Area69Lab x henloboi (we r area69lab anyways)
 
 Features : 
 
-Simplified code, that's all.
+Simplified code, that's all :)
 
 
 ## Credits and thanks ##
