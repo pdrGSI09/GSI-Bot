@@ -26,8 +26,8 @@ jobs:
 
          run: |
               sudo install telegram /usr/bin
-              chmod +x $ROM/initial.sh
-              . $ROM/initial.sh
+              chmod +x initial.sh
+              . init.sh
        
        - name: Clone ErfanGSI Source Code
          run: git clone https://github.com/yukosky/ErfanGSIs -b runner
@@ -43,8 +43,8 @@ jobs:
               TOKEN: ${{ secrets.TOKEN }}
               
          run: |
-               chmod +x $ROM/build.sh
-               . $ROM/build.sh
+               chmod +x build.sh
+               . build.sh
                
        - name: Copy and rename A-Only build info
          run: cp ErfanGSIs/output/*Aonly*.txt Aonly.txt

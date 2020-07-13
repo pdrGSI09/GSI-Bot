@@ -1,6 +1,6 @@
 #!/bin/bash
 # Sync
-telegram -M "RogUI: Sync started"
+telegram -M "$ROM: Sync started"
 SYNC_START=$(date +"%s")
 
 sudo -E apt-get -qq update
@@ -9,4 +9,4 @@ pip install pyrogram tgcrypto
 
 SYNC_END=$(date +"%s")
 SYNC_DIFF=$((SYNC_END - SYNC_START))
-telegram -M "RogUI: Sync completed successfully in $((SYNC_DIFF / 60)) minute(s) and $((SYNC_DIFF % 60)) seconds"
+telegram -M "$ROM: Init done in  $((SYNC_DIFF / 60)) minute(s) and $((SYNC_DIFF % 60)) seconds"
