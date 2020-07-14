@@ -3,8 +3,8 @@ name: GSI - Erfan
 on: [push]
 
 env:
-  ROM: Moto
-  ROM_LINK: https://mirrors.lolinet.com/firmware/moto/astro/official/OPENCL/XT2073-2_ASTRO_OPENCL_10_QPL30.62-23-2_subsidy-DEFAULT_regulatory-DEFAULT_CFC.xml.zip
+  ROM: Funtouch
+  ROM_LINK: http://asia-sysupwsdl.vivoglobal.com/upgrade/official/officialFiles/PD1730F_EX_A_6.10.2-update-full_1579330406.zip
   MIR: gof
   TZ: America/Sao_Paulo
 jobs:
