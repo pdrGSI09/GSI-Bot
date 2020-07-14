@@ -3,8 +3,8 @@ name: GSI - Erfan
 on: [push]
 
 env:
-  ROM: Generic:Nokia8-Sirroco
-  ROM_LINK: http://download770.mediafire.com/367xasrpoogg/i6g8a8fuml9x1l5/Nokia_8_Sirocco_A1N-414B-0-00WW-B05_OST.zip
+  ROM: ZUI
+  ROM_LINK: https://mirrors.lolinet.com/firmware/lenovo/l19111/L19111_CN_OPEN_USER_SC9863_P_DRV_11.0.243_ST_200630.zip
   MIR: gof
   TZ: America/Sao_Paulo
 jobs:
