@@ -1,4 +1,4 @@
-# Thanks to github.com/usernein
+# Thank s to github.com/usernein
 
 import os
 import pyrogram
