@@ -4,7 +4,7 @@ on: [push]
 
 env:
   ROM: ColorOS
-  ROM_LINK: http://tdrive.manofuranium.workers.dev/Oppo_Realme_C11_RMX2185_11_A.51_200626_RFT_(by_oppostockrom.com).zip
+  ROM_LINK: http://tdrive.manofuranium.workers.dev/Oppo_Reno_Lite_PCAT10_11_A.10_190708_(by_oppostockrom.com).zip
   MIR: gof
   TZ: America/Sao_Paulo
 jobs:
