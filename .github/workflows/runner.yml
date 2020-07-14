@@ -3,8 +3,8 @@ name: GSI - Erfan
 on: [push]
 
 env:
-  ROM: ZUI
-  ROM_LINK: https://mirrors.lolinet.com/firmware/lenovo/l19111/L19111_CN_OPEN_USER_SC9863_P_DRV_11.0.243_ST_200630.zip
+  ROM: Moto
+  ROM_LINK: https://mirrors.lolinet.com/firmware/moto/astro/official/OPENCL/XT2073-2_ASTRO_OPENCL_10_QPL30.62-23-2_subsidy-DEFAULT_regulatory-DEFAULT_CFC.xml.zip
   MIR: gof
   TZ: America/Sao_Paulo
 jobs:
