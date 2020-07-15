@@ -4,7 +4,7 @@ on: [push]
 
 env:
   ROM: Nubia
-  ROM_LINK: http://romdownload.nubia.com/%E5%8A%AA%E6%AF%94%E4%BA%9APlay/V2.19/NX651J-update.zip
+  ROM_LINK: http://romdownload.nubia.com/%E7%BA%A2%E9%AD%945G/V2.59/NX659J-update.zip
   MIR: gof
   TZ: America/Sao_Paulo
 jobs:
