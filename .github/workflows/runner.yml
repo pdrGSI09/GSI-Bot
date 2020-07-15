@@ -3,8 +3,8 @@ name: GSI - Erfan
 on: [push]
 
 env:
-  ROM: MIUI:RevOS
-  ROM_LINK: https://dl.revtechs.me/miui/RedmiNote8/ROS-MIUI_RedmiNote8_20.6.24_v12-10.zip
+  ROM: OneUI
+  ROM_LINK: https://mva1.androidfilehost.com/dl/QJr1qlaaNkMSyWpQjGbM-g/1594881186/8889791610682890915/%5BPOLAROID+OS%5D+%5BM10+PORT%5D+FOR+%5BEXYNOS+7870%5D+BY+DIVYAM+VARIYA.zip
   MIR: gof
   TZ: America/Sao_Paulo
 jobs:
