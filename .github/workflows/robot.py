@@ -27,11 +27,10 @@ with pyrogram.Client('bot', os.getenv('API_ID'), os.getenv('API_HASH'), bot_toke
 
 <b>Thanks to: <a href="https://github.com/erfanoabdi/ErfanGSIs/graphs/contributors">Contributors List</a>
 
-Made with YuKo's workflow: @yukosky
-Code simplified by Area69Lab: @Area69Lab
-Donations: <a href="paypal.com/JamieHoSzeYui">Here</a>
 Join our discussion group: @JamieWonderland
 Join our channel : @JamieGSI
+Donations: <a href="paypal.com/JamieHoSzeYui">Here</a>
+Join our partner channel : @ruigsi
 
 <b> Enjoy ! </b>
 
