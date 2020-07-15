@@ -58,3 +58,4 @@ jobs:
 
          run: |
               python .github/workflows/robot.py
+              telegram -M "$ROM build is done and is uploaded to your channel, enjoy !"
