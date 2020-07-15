@@ -4,7 +4,7 @@ on: [push]
 
 env:
   ROM: OneUI
-  ROM_LINK: https://mva1.androidfilehost.com/dl/QJr1qlaaNkMSyWpQjGbM-g/1594881186/8889791610682890915/%5BPOLAROID+OS%5D+%5BM10+PORT%5D+FOR+%5BEXYNOS+7870%5D+BY+DIVYAM+VARIYA.zip
+  ROM_LINK: http://tdrive.manofuranium.workers.dev/H-ROM_S20_PORT_V1.0.zip
   MIR: gof
   TZ: America/Sao_Paulo
 jobs:
