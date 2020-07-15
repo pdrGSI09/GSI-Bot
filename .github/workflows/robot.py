@@ -29,7 +29,7 @@ with pyrogram.Client('bot', os.getenv('API_ID'), os.getenv('API_HASH'), bot_toke
 
 Made with YuKo's workflow: @yukosky
 Code simplified by Area69Lab: @Area69Lab
-Donations: <a href="{paypal.com/JamieHoSzeYui}">Here</a>
+Donations: <a href="paypal.com/JamieHoSzeYui">Here</a>
 Join our discussion group: @JamieWonderland
 Join our channel : @JamieGSI
 
