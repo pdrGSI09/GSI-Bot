@@ -29,9 +29,16 @@ with pyrogram.Client('bot', os.getenv('API_ID'), os.getenv('API_HASH'), bot_toke
 
 Made with YuKo's workflow: @yukosky
 Code simplified by Area69Lab: @Area69Lab
+Donations: <a href="{paypal.com/JamieHoSzeYui}">Here</a>
+Join our discussion group: @JamieWonderland
+Join our channel : @JamieGSI
+
+<b> Enjoy ! </b>
 
 <a href="https://github.com/JamieHoSzeYui/ErfanGSIs">Ported using ErfanGSIs Tool, Jamie's mod</a>""",
         chat_id=os.getenv('CHAT_ID'),
         parse_mode="html",
         disable_web_page_preview=True
     )
+    
+
