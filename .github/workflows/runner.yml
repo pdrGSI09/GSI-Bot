@@ -4,7 +4,7 @@ on: [push]
 
 env:
   ROM: VOS
-  ROM_LINK: https://android.googleapis.com/packages/ota-api/vsmart_v620a_v620aopen/7a0ac992c942ffa6fa7a366c53f5a1b801394933.zip
+  ROM_LINK: https://android.googleapis.com/packages/ota-api/vsmart_v620a_v620aopen/aab50f2d2b30d4c531c60bff95ed21ff5581fe1d.zip
   MIR: gof
   TZ: America/Sao_Paulo
 jobs:
