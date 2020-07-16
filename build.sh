@@ -20,5 +20,7 @@ sudo ./ErfanGSIs/url2GSI.sh $ROM_LINK $ROM
 
     echo "::set-env name=DOWNLOAD_A::$(./transfer $MIR "$ROM-Aonly-$sourcever2-$date2-ErfanGSI.7z" | grep -o -P '(?<=Download Link: )\S+')"
     echo "::set-env name=DOWNLOAD_AB::$(./transfer $MIR "$ROM-AB-$sourcever2-$date2-ErfanGSI.7z" | grep -o -P '(?<=Download Link: )\S+')"
+    echo "::set-env name=MIRROR_A::$(./transfer $MIR2 "$ROM-AB-$sourcever2-$date2-ErfanGSI.7z" | grep -o -P '(?<=Download Link: )\S+')"
+    echo "::set-env name=MIRROR_AB::$(./transfer $MIR2 "$ROM-AB-$sourcever2-$date2-ErfanGSI.7z" | grep -o -P '(?<=Download Link: )\S+')"
 
     
