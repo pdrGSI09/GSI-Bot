@@ -4,7 +4,7 @@ on: [push]
 
 env:
   ROM: Generic:ConquerOS
-  ROM_LINK: https://tenet.dl.sourceforge.net/project/conqueros//ten/stable/rosy/ConquerOS_X-3.3-rosy-20200711-1925-OFFICIAL.zip
+  ROM_LINK: https://iweb.dl.sourceforge.net/project/build1//builds/msm/NF/Xtended-XQ-v10.0-mido-NIGHT_FURY-XPLOITED-20200616.zip
   MIR: gof
   MIR2: wet
   TZ: America/Sao_Paulo
