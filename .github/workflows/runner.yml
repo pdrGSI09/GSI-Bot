@@ -3,7 +3,7 @@ name: GSI - Erfan
 on: [push]
 
 env:
-  ROM: OxygenOS
+  ROM: OPMinimal
   ROM_LINK: https://oxygenos.oneplus.net/OnePlus7ProOxygen_13.W.37_OTA_037_all_2006051449_b4f440aac7f14183.zip
   MIR: gof
   MIR2: wet
