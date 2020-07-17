@@ -3,8 +3,8 @@ name: GSI - Erfan
 on: [push]
 
 env:
-  ROM: Generic:Nokia
-  ROM_LINK: https://r1---sn-gwpa-qxay.gvt1.com/packages/data/ota-api/nokia_drx_drax00eea/f4833756f2e76fcb818489dfc7492fa50dfd03ef.zip?mh=nK&mip=112.196.158.76&mvi=0&pl=24&redirect_counter=1&cm2rm=sn-qxovoapox-qxal7e&req_id=e529f279470ba895&cms_redirect=yes&mm=29&mn=sn-gwpa-qxay&ms=rdu&mt=1594190253&mv=m&pcm2cms=yes
+  ROM: OxygenOS
+  ROM_LINK: https://oxygenos.oneplus.net/OnePlus7ProOxygen_13.W.37_OTA_037_all_2006051449_b4f440aac7f14183.zip
   MIR: gof
   MIR2: wet
   TZ: America/Sao_Paulo
