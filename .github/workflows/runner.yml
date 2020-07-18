@@ -4,7 +4,7 @@ on: [push]
 
 env:
   ROM: ColorOS
-  ROM_LINK: http://downloads.oppo.com.s3.amazonaws.com/firmware/CPH1919/CPH1919EX_11_OTA_0200_all_9RJTMdBIoIjS.ozip
+  ROM_LINK: http://downloads.oppo.com.s3.amazonaws.com/firmware/CPH2035/CPH2035PU_11_OTA_0190_all_6B3UqSOdYYO8.ozip
   MIR: gof
   MIR2: wet
   TZ: America/Sao_Paulo
