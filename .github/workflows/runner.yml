@@ -3,8 +3,8 @@ name: GSI - Erfan
 on: [push]
 
 env:
-  ROM: VOS
-  ROM_LINK: https://android.googleapis.com/packages/ota-api/vsmart_v620a_v620aopen/aab50f2d2b30d4c531c60bff95ed21ff5581fe1d.zip
+  ROM: ColorOS
+  ROM_LINK: http://downloads.oppo.com.s3.amazonaws.com/firmware/CPH1919/CPH1919EX_11_OTA_0200_all_9RJTMdBIoIjS.ozip
   MIR: gof
   MIR2: wet
   TZ: America/Sao_Paulo
