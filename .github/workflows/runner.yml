@@ -3,8 +3,8 @@ name: GSI - Erfan
 on: [push]
 
 env:
-  ROM: POSP
-  ROM_LINK: https://ufpr.dl.sourceforge.net/project/posp/whyred/croquette/potato_whyred-10-20200709-croquette.v3.2.1%2B17.Official.zip
+  ROM: Pixel
+  ROM_LINK: https://dl.google.com/developers/android/rvc/images/factory/walleye-rpb2.200611.009-factory-97f69fa0.zip
   MIR: gof
   TZ: America/Sao_Paulo
 jobs:
