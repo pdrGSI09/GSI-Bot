@@ -3,8 +3,8 @@ name: GSI - Erfan
 on: [push]
 
 env:
-  ROM: Pixel
-  ROM_LINK: https://dl.google.com/developers/android/rvc/images/factory/walleye-rpb2.200611.009-factory-97f69fa0.zip
+  ROM: Generic
+  ROM_LINK: https://mpl1.androidfilehost.com/dl/cvtuJYGghPYby3Cv54MZEQ/1595481423/8889791610682897317/PixysOS-v3.1.1-lake-UNOFFICIAL-20200721-172318.zip
   MIR: gof
   TZ: America/Sao_Paulo
 jobs:
