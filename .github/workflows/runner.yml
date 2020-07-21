@@ -3,8 +3,8 @@ name: GSI - Erfan
 on: [push]
 
 env:
-  ROM: Moto
-  ROM_LINK: https://mirrors.lolinet.com/firmware/moto/ginna/official/RETUS/XT2052-1_GINNA_RETUS_10_QPG30.82-62_subsidy-DEFAULT_regulatory-DEFAULT_CFC_R2_CFC.xml.zip
+  ROM: Generic
+  ROM_LINK: https://mgb1.androidfilehost.com/dl/m-1S9xZe5b09YAihYo59Rw/1595455922/8889791610682897089/Masik+X+15.0+Davinci.zip
   MIR: gof
   TZ: America/Sao_Paulo
 jobs:
