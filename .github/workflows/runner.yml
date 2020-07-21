@@ -3,8 +3,8 @@ name: GSI - Erfan
 on: [push]
 
 env:
-  ROM: crDroid
-  ROM_LINK: https://mva2.androidfilehost.com/dl/4_0jSrBlDUV51PRHe_RNtQ/1595452117/8889791610682896734/crDroidAndroid-10.0-20200721-ocean-v6.8.zip?
+  ROM: PixelExperience
+  ROM_LINK: https://mva1.androidfilehost.com/dl/dIeYxd8u4NHQW8DUXne1dQ/1595454447/8889791610682897092/PixelExperience_violet-10.0-20200721-1308-UNOFFICIAL.zip?
   MIR: gof
   TZ: America/Sao_Paulo
 jobs:
