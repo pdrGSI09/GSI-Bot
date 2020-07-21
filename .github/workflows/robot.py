@@ -15,7 +15,7 @@ dab = os.getenv('DOWNLOAD_AB')
 
 with pyrogram.Client('bot', os.getenv('API_ID'), os.getenv('API_HASH'), bot_token=os.getenv('TOKEN')) as client:
     client.send_message(
-        text=f"""<b>{rom} GSI For A/AB Devices (Pixel Dust CAF)</b>
+        text=f"""<b>{rom} GSI For A/AB Devices (StagOS)</b>
 
 <b>Firmware Base:</b> <a href="{romlink}">HERE</a>
 
@@ -28,7 +28,7 @@ with pyrogram.Client('bot', os.getenv('API_ID'), os.getenv('API_HASH'), bot_toke
 <b>Thanks to:</b> <a href="https://github.com/yukosky/ErfanGSIs/graphs/contributors">Contributors List</a>
 
 <b>YuMi Projekt </b> - Channel: @yuprojekt
-<b>YuMi Projekt </b> - Group: @yuspport 
+<b>YuMi Projekt </b> - Group: @yusupport 
 
 <a href="https://github.com/yukosky/ErfanGSIs">Ported using ErfanGSIs Tool - YuKo's Based</a>""",
         chat_id=os.getenv('CHAT_ID'),
