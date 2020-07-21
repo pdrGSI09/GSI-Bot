@@ -3,8 +3,8 @@ name: GSI - Erfan
 on: [push]
 
 env:
-  ROM: ZenX-OS
-  ROM_LINK: https://mva1.androidfilehost.com/dl/detwWUGbRzgDA-oD1ulhsQ/1595452157/8889791610682896992/ZenX-OS-v1.7-Unofficial-raphael-20200721.zip?
+  ROM: Mooke
+  ROM_LINK: https://us-dl.mokeedev.com/firmware/TUsxMDAuMC1sYXZlbmRlci0yMDIwMDcyMTA3NDYtTklHSFRMWS56aXB8ZmlybXdhcmV8MTU5NTM2NTk1OA/MK100.0-lavender-202007210746-NIGHTLY.zip
   MIR: gof
   TZ: America/Sao_Paulo
 jobs:
