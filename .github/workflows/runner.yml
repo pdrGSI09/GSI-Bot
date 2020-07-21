@@ -4,7 +4,7 @@ on: [push]
 
 env:
   ROM: Moto
-  ROM_LINK: https://mirrors.lolinet.com/firmware/moto/lake/official/RETEU/XT1965-3_LAKE_RETEU_10_QPWS30.61-25-4_subsidy-DEFAULT_regulatory-DEFAULT_CFC.xml.zip
+  ROM_LINK: https://mirrors.lolinet.com/firmware/moto/deen/official/RETEU/XT1941-4_DEEN_RETEU_10_QPKS30.54-22-10_cid50_subsidy-DEFAULT_regulatory-DEFAULT_CFC.xml.zip
   MIR: gof
   TZ: America/Sao_Paulo
 jobs:
