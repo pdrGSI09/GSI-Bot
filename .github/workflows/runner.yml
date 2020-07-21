@@ -3,8 +3,8 @@ name: GSI - Erfan
 on: [push]
 
 env:
-  ROM: PixelExperience
-  ROM_LINK: https://mva1.androidfilehost.com/dl/dIeYxd8u4NHQW8DUXne1dQ/1595454447/8889791610682897092/PixelExperience_violet-10.0-20200721-1308-UNOFFICIAL.zip?
+  ROM: Moto
+  ROM_LINK: https://mirrors.lolinet.com/firmware/moto/doha/official/RETAIL/DOHA_RETAIL_9.0_PPIS29.65-51-5_subsidy-DEFAULT_regulatory-DEFAULT_CFC.xml.zip
   MIR: gof
   TZ: America/Sao_Paulo
 jobs:
