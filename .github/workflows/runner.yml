@@ -4,7 +4,7 @@ on: [push]
 
 env:
   ROM: Generic
-  ROM_LINK: https://mor1.androidfilehost.com/dl/rbBWs746VZBXx2uE0YP6Gw/1595546128/8889791610682897727/aicp_lavender_q-15.0-UNOFFICIAL-20200722.zip
+  ROM_LINK: https://build.aospa.co/updates/oneplus5/pa-quartz-4-oneplus5-20200718.zip
   MIR: gof
   TZ: America/Sao_Paulo
 jobs:
