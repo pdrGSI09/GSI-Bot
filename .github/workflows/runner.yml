@@ -4,7 +4,7 @@ on: [push]
 
 env:
   ROM: Generic
-  ROM_LINK: https://mde1.androidfilehost.com/dl/EG3KG7iv7EoeNwe5R-uGEQ/1595548154/8889791610682897784/Corvus_v7.5-OMEN-X00TD-22072020-UNOFFICIAL-1212.zip
+  ROM_LINK: https://build.aospa.co/updates/jasmine_sprout/pa-quartz-4-jasmine_sprout-20200718.zip
   MIR: gof
   TZ: America/Sao_Paulo
 jobs:
