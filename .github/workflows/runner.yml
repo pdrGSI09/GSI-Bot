@@ -4,7 +4,7 @@ on: [push]
 
 env:
   ROM: Generic
-  ROM_LINK: https://mva1.androidfilehost.com/dl/FMtTIwFkWr8jPzcv3FErKg/1595545718/8889791610682897731/PixysOS-v3.1.1-lake-UNOFFICIAL-20200722-084034.zip
+  ROM_LINK: https://mor1.androidfilehost.com/dl/rbBWs746VZBXx2uE0YP6Gw/1595546128/8889791610682897727/aicp_lavender_q-15.0-UNOFFICIAL-20200722.zip
   MIR: gof
   TZ: America/Sao_Paulo
 jobs:
