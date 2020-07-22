@@ -15,22 +15,23 @@ dab = os.getenv('DOWNLOAD_AB')
 
 with pyrogram.Client('bot', os.getenv('API_ID'), os.getenv('API_HASH'), bot_token=os.getenv('TOKEN')) as client:
     client.send_message(
-        text=f"""<b>{rom} GSI For A/AB Devices</b>
+        text=f"""- <b>{rom} GSI For A-Only • A/B Devices (Bliss v12.9)</b>
 
-<b>Firmware Base:</b> <a href="{romlink}">HERE</a>
+<b>- Firmware Base:</b> <a href="{romlink}">HERE</a>
 
-<b>Information:</b>
+<b>- Information:</b>
+
 <code>{cat}</code>
 
-<b>Download A-Only:</b> <a href="{da}">HERE</a>
-<b>Download A/B:</b> <a href="{dab}">HERE</a>
+<b>- Download A-Only:</b> <a href="{da}">HERE</a>
+<b>- Download A/B:</b> <a href="{dab}">HERE</a>
 
-<b>Thanks to:</b> <a href="https://github.com/yukosky/ErfanGSIs/graphs/contributors">Contributors List</a>
+<b>- Thanks to:</b> <a href="https://github.com/yukosky/ErfanGSIs/graphs/contributors">Contributors List</a>
 
-<b>YuMi Projekt </b> - Channel: @yuprojekt
-<b>YuMi Projekt </b> - Group: @yusupport 
+<b>• YuMi Projekt </b> - Channel: @yuprojekt
+<b>• YuMi Projekt </b> - Group: @yusupport 
 
-<a href="https://github.com/yukosky/ErfanGSIs">Ported using ErfanGSIs Tool - YuKo's Based</a>""",
+• <b>Ported using ErfanGSIs Tool - <a href="https://github.com/yukosky/ErfanGSIs">Yuko's Based</a>""",
         chat_id=os.getenv('CHAT_ID'),
         parse_mode="html",
         disable_web_page_preview=True
