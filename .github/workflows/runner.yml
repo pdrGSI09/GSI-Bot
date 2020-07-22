@@ -4,7 +4,7 @@ on: [push]
 
 env:
   ROM: Generic
-  ROM_LINK: https://images.ecloud.global/dev/guacamoleb/e-0.9-p-2020062560240-dev-guacamoleb.zip
+  ROM_LINK: https://mgb1.androidfilehost.com/dl/-wMLsyNG8Lq2uXTLqOufXg/1595569748/8889791610682897908/e-0.9-p-2020072263916-test-zangya.zip
   MIR: gof
   TZ: America/Sao_Paulo
 jobs:
