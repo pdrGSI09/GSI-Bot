@@ -4,7 +4,7 @@ on: [push]
 
 env:
   ROM: MIUI
-  ROM_LINK: https://mpl1.androidfilehost.com/dl/tRcf84xcqDwJxEIlwqtkGw/1595533860/8889791610682897616/Masik+X+15.1+Platina.zip
+  ROM_LINK: https://mgb1.androidfilehost.com/dl/JBvt-muabkPMfVE8ihu_NQ/1595534056/8889791610682897616/Masik+X+15.1+Platina.zip
   MIR: gof
   TZ: America/Sao_Paulo
 jobs:
