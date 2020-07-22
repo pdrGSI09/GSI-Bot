@@ -3,8 +3,8 @@ name: GSI - Erfan
 on: [push]
 
 env:
-  ROM: MIUI
-  ROM_LINK: https://mor1.androidfilehost.com/dl/ms7Pwi4s5a-nNiJlBNL7gw/1595534256/8889791610682897613/Masik+X+15.1+Lavender.zip
+  ROM: Generic
+  ROM_LINK: https://mva1.androidfilehost.com/dl/FMtTIwFkWr8jPzcv3FErKg/1595545718/8889791610682897731/PixysOS-v3.1.1-lake-UNOFFICIAL-20200722-084034.zip
   MIR: gof
   TZ: America/Sao_Paulo
 jobs:
