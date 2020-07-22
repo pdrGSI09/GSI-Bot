@@ -3,8 +3,8 @@ name: GSI - Erfan
 on: [push]
 
 env:
-  ROM: Generic
-  ROM_LINK: https://mde1.androidfilehost.com/dl/Z56itdvlcjYV64h2f0Gbew/1595526594/8889791610682897539/Corvus_v7.5-OMEN-hydrogen-21072020-UNOFFICIAL-1755.zip
+  ROM: PixelExperience
+  ROM_LINK: https://mva1.androidfilehost.com/dl/JFOdLQ0hrpwzuYEmiIB6OQ/1595526670/8889791610682897543/PixelExperience_x2-10.0-20200722-0534-UNOFFICIAL.zip
   MIR: gof
   TZ: America/Sao_Paulo
 jobs:
