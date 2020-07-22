@@ -3,8 +3,8 @@ name: GSI - Erfan
 on: [push]
 
 env:
-  ROM: ZUI
-  ROM_LINK: https://mirrors.lolinet.com/firmware/lenovo/l38111/L38111_ROW_SECURE_USER_Q00024.0_P_ROW_11.0.224_ST_191126_qpst.zip
+  ROM: MIUI
+  ROM_LINK: https://dl.revtechs.me/miui/ROS-MIUI_MI8_20.7.15_v12-10.zip
   MIR: gof
   TZ: America/Sao_Paulo
 jobs:
