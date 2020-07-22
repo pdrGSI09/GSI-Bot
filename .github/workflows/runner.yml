@@ -4,7 +4,7 @@ on: [push]
 
 env:
   ROM: Generic
-  ROM_LINK: https://build.aospa.co/updates/oneplus5/pa-quartz-4-oneplus5-20200718.zip
+  ROM_LINK: https://mpl1.androidfilehost.com/dl/lSIYt1MzKGCjCKILpWEjmA/1595548066/8889791610682897788/Bliss-v12.10-zippo-UNOFFICIAL-20200722.zip
   MIR: gof
   TZ: America/Sao_Paulo
 jobs:
