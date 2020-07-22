@@ -3,8 +3,8 @@ name: GSI - Erfan
 on: [push]
 
 env:
-  ROM: Generic
-  ROM_LINK: https://mva1.androidfilehost.com/dl/IwDJCFdNqWz2679SCGfMiQ/1595534118/8889791610682897662/Corvus_v7.5-OMEN-RMX1801-22072020-OFFICIAL-1228.zip
+  ROM: MIUI
+  ROM_LINK: https://mor1.androidfilehost.com/dl/ms7Pwi4s5a-nNiJlBNL7gw/1595534256/8889791610682897613/Masik+X+15.1+Lavender.zip
   MIR: gof
   TZ: America/Sao_Paulo
 jobs:
