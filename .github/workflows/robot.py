@@ -15,7 +15,7 @@ dab = os.getenv('DOWNLOAD_AB')
 
 with pyrogram.Client('bot', os.getenv('API_ID'), os.getenv('API_HASH'), bot_token=os.getenv('TOKEN')) as client:
     client.send_message(
-        text=f"""<b>{rom} GSI For A/AB Devices (/e/ ROM)</b>
+        text=f"""<b>{rom} GSI For A/AB Devices (CorvusOS v7.5)</b>
 
 <b>Firmware Base:</b> <a href="{romlink}">HERE</a>
 
