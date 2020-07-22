@@ -4,7 +4,7 @@ on: [push]
 
 env:
   ROM: Generic
-  ROM_LINK: https://images.ecloud.global/dev/fajita/e-0.9-p-2020062560240-dev-fajita.zip
+  ROM_LINK: https://mor1.androidfilehost.com/dl/XHqvLd460iKzasEgEzKnFQ/1595566076/8889791610682897897/crDroidAndroid-10.0-20200722-laurel_sprout-v6.8.zip
   MIR: gof
   TZ: America/Sao_Paulo
 jobs:
