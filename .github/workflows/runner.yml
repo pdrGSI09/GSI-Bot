@@ -3,8 +3,8 @@ name: GSI - Erfan
 on: [push]
 
 env:
-  ROM: Generic
-  ROM_LINK: https://mpl1.androidfilehost.com/dl/BwXnmJx10rL0ChNyVYn2RA/1595576782/8889791610682897941/e-0.9-p-2020072264212-test-bardock.zip
+  ROM: LineageX
+  ROM_LINK: https://mde1.androidfilehost.com/dl/NdMVcCsRjn2lSiDMWmJEoQ/1595591357/8889791610682898183/LineageX-10.0-20200723-beryllium-v1.1.zip
   MIR: gof
   TZ: America/Sao_Paulo
 jobs:
