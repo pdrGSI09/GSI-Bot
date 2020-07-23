@@ -4,7 +4,7 @@ on: [push]
 
 env:
   ROM: Generic
-  ROM_LINK: https://mgb1.androidfilehost.com/dl/ISnoHu5er239eDQQkZx54Q/1595570945/8889791610682897911/e-0.9-p-2020072263916-test-zenfone3.zip
+  ROM_LINK: https://mpl1.androidfilehost.com/dl/BwXnmJx10rL0ChNyVYn2RA/1595576782/8889791610682897941/e-0.9-p-2020072264212-test-bardock.zip
   MIR: gof
   TZ: America/Sao_Paulo
 jobs:
