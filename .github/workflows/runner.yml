@@ -3,8 +3,8 @@ name: GSI - Erfan
 on: [push]
 
 env:
-  ROM: Generic
-  ROM_LINK: https://mde1.androidfilehost.com/dl/NdMVcCsRjn2lSiDMWmJEoQ/1595591357/8889791610682898183/LineageX-10.0-20200723-beryllium-v1.1.zip
+  ROM: ZUI
+  ROM_LINK: https://www.googleapis.com/drive/v3/files/1QlgOMFhL9uUUls3Tn7Rw-4ukE11VEKew?alt=media&key=AIzaSyAPeiAtskDMGvYJqAUb00tTQ3P90ER-LP8
   MIR: gof
   TZ: America/Sao_Paulo
 jobs:
