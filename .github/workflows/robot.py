@@ -31,7 +31,7 @@ with pyrogram.Client('bot', os.getenv('API_ID'), os.getenv('API_HASH'), bot_toke
 <b>• YuMi Projekt </b> - Channel: @yuprojekt
 <b>• YuMi Projekt </b> - Group: @yusupport
 
-<b>• READ:</b> If you are going to use the firmware, remember that the ZUI has product merge on the system partition, and a de-bloat especially. Good luck builders, don't try to re-create the file, this link won't break even because I did it and in case of a fall, I'll upload it to SourceForge.
+<b>• READ:</b> This OneUI is de-bloated and is from J600X, made by Noel.
 
 • <b>Ported using ErfanGSIs Tool - <a href="https://github.com/yukosky/ErfanGSIs">Yuko's Based</a>""",
         chat_id=os.getenv('CHAT_ID'),
