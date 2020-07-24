@@ -31,7 +31,7 @@ with pyrogram.Client('bot', os.getenv('API_ID'), os.getenv('API_HASH'), bot_toke
 <b>• YuMi Projekt </b> - Channel: @yuprojekt
 <b>• YuMi Projekt </b> - Group: @yusupport
 
-<b>• READ:</b> This OneUI is de-bloated and is from J600X, made by Noel.
+<b>• READ:</b> This OxygenOS Nord is de-bloated before the Erfan Script, maybe you need to flash GApps If don't boot or others.
 
 • <b>Ported using ErfanGSIs Tool - <a href="https://github.com/yukosky/ErfanGSIs">Yuko's Based</a>""",
         chat_id=os.getenv('CHAT_ID'),
