@@ -15,7 +15,7 @@ dab = os.getenv('DOWNLOAD_AB')
 
 with pyrogram.Client('bot', os.getenv('API_ID'), os.getenv('API_HASH'), bot_token=os.getenv('TOKEN')) as client:
     client.send_message(
-        text=f"""- <b>{rom} GSI For A-Only • A/B Devices</b>
+        text=f"""- <b>{rom} GSI For A-Only • A/B Devices (ColtOS ROM)</b>
 
 <b>- Firmware Base:</b> <a href="{romlink}">HERE</a>
 
@@ -30,8 +30,6 @@ with pyrogram.Client('bot', os.getenv('API_ID'), os.getenv('API_HASH'), bot_toke
 
 <b>• YuMi Projekt </b> - Channel: @yuprojekt
 <b>• YuMi Projekt </b> - Group: @yusupport
-
-<b>• READ:</b> This OxygenOS Nord is de-bloated before the Erfan Script, maybe you need to flash GApps If don't boot or others.
 
 • <b>Ported using ErfanGSIs Tool - <a href="https://github.com/yukosky/ErfanGSIs">Yuko's Based</a>""",
         chat_id=os.getenv('CHAT_ID'),
