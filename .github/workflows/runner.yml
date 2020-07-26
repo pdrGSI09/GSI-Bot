@@ -4,7 +4,7 @@ on: [push]
 
 env:
   ROM: Generic
-  ROM_LINK: https://www.googleapis.com/drive/v3/files/10ae9sVtWzDIF8SfXq7_QX-kGI1fLsolf?alt=media&key=AIzaSyAPeiAtskDMGvYJqAUb00tTQ3P90ER-LP8
+  ROM_LINK: https://cfhcable.dl.sourceforge.net/project/ancientrom//mido/Weeabo/Weeabo-Vanilla/AncientOS-weeaboify-v3.9-mido-Koshiki-20200726-0628-Vanilla.zip
   MIR: gof
   TZ: America/Sao_Paulo
   READ: 
