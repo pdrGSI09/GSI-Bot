@@ -4,7 +4,7 @@ on: [push]
 
 env:
   ROM: Generic
-  ROM_LINK: https://phoenixnap.dl.sourceforge.net/project/ancientrom//ginkgo/AncientOS-weeaboify-v3.9-ginkgo-Koshiki-20200725-1211-Vanilla.zip
+  ROM_LINK: https://netactuate.dl.sourceforge.net/project/ancientrom//RMX199X/AncientOS-weeaboify-v3.9-x2-Koshiki-20200725-1555-Vanilla.zip
   MIR: gof
   TZ: America/Sao_Paulo
   READ: 
