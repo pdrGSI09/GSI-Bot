@@ -3,11 +3,11 @@ name: GSI - Erfan
 on: [push]
 
 env:
-  ROM: HavocOS
-  ROM_LINK: https://mva2.androidfilehost.com/dl/78EAW7-HggRxRcUM_R_J7g/1595855232/8889791610682900573/Havoc-OS-v3.7-20200726-zippo-Unofficial.zip
+  ROM: RogUI
+  ROM_LINK: https://dlcdnets.asus.com/pub/ASUS/ZenFone/ZS600KL/UL-ASUS_Z01QD_1-CN-16.0420.2003.24-1.1.65-user.zip
   MIR: gof
   TZ: America/Sao_Paulo
-  READ: 
+  READ: This firmware is based on the CN type.
 jobs:
   build:
     runs-on: ubuntu-latest

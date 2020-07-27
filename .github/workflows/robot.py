@@ -12,10 +12,11 @@ cat = os.getenv('CAT_FILE')
 romlink = os.getenv('ROM_LINK')
 da = os.getenv('DOWNLOAD_A')
 dab = os.getenv('DOWNLOAD_AB')
+read = os.getenv('READ')
 
 with pyrogram.Client('bot', os.getenv('API_ID'), os.getenv('API_HASH'), bot_token=os.getenv('TOKEN')) as client:
     client.send_message(
-        text=f"""- <b>{rom} GSI For A-Only • A/B Devices (HavocOS 3.7 ROM)</b>
+        text=f"""- <b>{rom} GSI For A-Only • A/B Devices (CN Type)</b>
 
 <b>- Firmware Base:</b> <a href="{romlink}">HERE</a>
 
@@ -30,6 +31,8 @@ with pyrogram.Client('bot', os.getenv('API_ID'), os.getenv('API_HASH'), bot_toke
 
 <b>• YuMi Projekt </b> - Channel: @yuprojekt
 <b>• YuMi Projekt </b> - Group: @yusupport
+
+<b>• READ:</b> {read}
 
 • <b>Ported using ErfanGSIs Tool - <a href="https://github.com/yukosky/ErfanGSIs">Yuko's Based</a>""",
         chat_id=os.getenv('CHAT_ID'),
