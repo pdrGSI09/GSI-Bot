@@ -3,7 +3,7 @@
 telegram -M "RogUI: Process started"
 SYNC_START=$(date +"%s")
 telegram -M "RogUI: Copying folder ROM..."
-cp ErfanGSIs/roms/9/RogUI ErfanGSIs/roms/10/RogUI
+cp -r ErfanGSIs/roms/9/RogUI ErfanGSIs/roms/10/RogUI
 telegram -M "RogUI: Copy done. Process of url2GSI started"
 
 sudo ./ErfanGSIs/url2GSI.sh $ROM_LINK RogUI
