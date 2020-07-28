@@ -3,11 +3,11 @@ name: GSI - Erfan
 on: [push]
 
 env:
-  ROM: RogUI
-  ROM_LINK: https://dlsvr04.asus.com.cn/pub/ASUS/ZenFone/ZS660KL/UL-ASUS_I001_1-CN-17.0240.2004.9-1.1.35-user.zip
+  ROM: ProjectSakura
+  ROM_LINK: https://ufpr.dl.sourceforge.net/project/projectsakura/beryllium/ProjectSakura-VANILLA-2.Q-20200714-1424-beryllium-OFFICIAL.zip
   MIR: gof
   TZ: America/Sao_Paulo
-  READ: This firmware is based on the CN type.
+  READ: This is Generic type.
 jobs:
   build:
     runs-on: ubuntu-latest
