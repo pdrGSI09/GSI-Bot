@@ -16,7 +16,7 @@ read = os.getenv('READ')
 
 with pyrogram.Client('bot', os.getenv('API_ID'), os.getenv('API_HASH'), bot_token=os.getenv('TOKEN')) as client:
     client.send_message(
-        text=f"""- <b>{rom} GSI For A-Only • A/B Devices</b>
+        text=f"""- <b>{rom} GSI For A-Only • A/B Devices (Ancient 3.9 Primeval ROM)</b>
 
 <b>- Firmware Base:</b> <a href="{romlink}">HERE</a>
 
