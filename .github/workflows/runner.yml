@@ -54,6 +54,19 @@ jobs:
 
        - name: Upload to SF & Send build info to Telegram
          run: |
+         
+              export dateup2=`date +%Y%m%d`
+              echo "::set-env name=dateup::$(echo $dateup2)"
+
+              export TMPSFDIR=`cd /home/pfs/project/yumi-project/gsi/Generic/$ROM_GNERIC/$DEVICE/$dateup2`
+              echo "::set-env name=SFDIR::$(echo $TMPSFDIR)"
+
+              export TMPA=`https://sourceforge.net/projects/yumi-project/files/gsi/Generic/$ROM_GENERIC/$DEVICE/$ROM_GENERIC-Aonly-$sourcever2-$date2-ErfanGSI-YuMiGSI.zip/download`
+              echo "::set-env name=SF_DOWNLOAD_A::$(echo $TMPA)"
+
+              export TMPAB=`https://sourceforge.net/projects/yumi-project/files/gsi/Generic/$ROM_GENERIC/$DEVICE/$ROM_GENERIC-AB-$sourcever2-$date2-ErfanGSI-YuMiGSI.zip/download`
+              echo "::set-env name=SF_DOWNLOAD_AB::$(echo $TMPAB)"
+
               cd ErfanGSIs/output
               expect -c "
               spawn sftp pything@frs.sourceforge.net
