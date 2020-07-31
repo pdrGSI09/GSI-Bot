@@ -52,6 +52,37 @@ jobs:
        - name: Copy and rename A-Only build info
          run: cp ErfanGSIs/output/*Aonly*.txt Aonly.txt
 
+       - name: Upload to SF & Send build info to Telegram
+          run: |
+              cd ErfanGSIs/output
+              expect -c "
+              spawn sftp pything@frs.sourceforge.net
+              expect \"yes/no\"
+              send \"yes\r\"
+              expect \"Password\"
+              send \"${{ secrets.PASSWORD }}\r\"
+              expect \"sftp> \"
+              send \"$SFDIR\r\"
+              set timeout -1
+              send \"put *Aonly*.zip\r\"
+              expect \"Uploading\"
+              expect \"100%\"
+              expect \"sftp>\"
+              interact"
+              expect -c "
+              spawn sftp pything@frs.sourceforge.net
+              expect \"Password\"
+              send \"${{ secrets.PASSWORD }}\r\"
+              expect \"sftp> \"
+              send \"$SFDIR\r\"
+              set timeout -1
+              send \"put *AB*.zip\r\"
+              expect \"Uploading\"
+              expect \"100%\"
+              expect \"sftp>\"
+              send \"bye\r\"
+              interact"
+
        - name: Send build info to Telegram
          env:
               CHAT_ID: ${{ secrets.CHAT_ID }}
