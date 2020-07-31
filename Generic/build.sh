@@ -40,8 +40,11 @@ sudo ./ErfanGSIs/url2GSI.sh $ROM_LINK Generic:$ROM_GENERIC
     echo "::set-env name=WET_DOWNLOAD_AB::$(./transfer wet "$ROM_GENERIC-AB-$sourcever2-$date2-ErfanGSI-YuMiGSI.zip" | grep -o -P '(?<=Download Link: )\S+')"
 
     # SourceForge
-    export dateup=`date +%Y%m%d`
-    export TMPSFDIR='cd /home/pfs/project/yumi-project/gsi/Generic/$ROM_GNERIC/$DEVICE/$dateup/'
+    export dateup2=`date +%Y%m%d`
+    echo "::set-env name=DEVICE::$(echo $DEVICE)"
+    echo "::set-env name=dateup::$(echo $dateup2)"
+    
+    export TMPSFDIR='cd /home/pfs/project/yumi-project/gsi/Generic/$ROM_GNERIC/$DEVICE/$dateup2/'
     echo "::set-env name=SFDIR::$(echo $TMPSFDIR)"
 
     # Define temp var for SF_DOWNLOAD_A var
