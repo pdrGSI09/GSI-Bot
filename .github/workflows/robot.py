@@ -38,7 +38,7 @@ with pyrogram.Client('bot', os.getenv('API_ID'), os.getenv('API_HASH'), bot_toke
 
 <b>• READ:</b> {read}
 
-<b>• Ported using ErfanGSIs Tool - <a href="https://github.com/yukosky/ErfanGSIs">Yuko's Based</a>""",
+<b>• Ported using ErfanGSIs Tool -</b> <a href="https://github.com/yukosky/ErfanGSIs">Yuko's Based</a>""",
         chat_id=os.getenv('CHAT_ID'),
         parse_mode="html",
         disable_web_page_preview=True
