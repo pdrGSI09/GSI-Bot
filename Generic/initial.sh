@@ -1,12 +1,12 @@
 #!/bin/bash
 # Sync
-telegram -M "Generic: Sync started"
+telegram -M "Generic ($ROM_GENERIC): Sync started"
 SYNC_START=$(date +"%s")
 
 sudo -E apt-get -qq update
-sudo -E apt-get -qq install git openjdk-8-jdk wget expect yarn
+sudo -E apt-get -qq install git openjdk-8-jdk wget expect
 pip install pyrogram tgcrypto
 
 SYNC_END=$(date +"%s")
 SYNC_DIFF=$((SYNC_END - SYNC_START))
-telegram -M "Generic: Sync completed successfully in $((SYNC_DIFF / 60)) minute(s) and $((SYNC_DIFF % 60)) seconds"
+telegram -M "Generic ($ROM_GENERIC): Sync completed successfully in $((SYNC_DIFF / 60)) minute(s) and $((SYNC_DIFF % 60)) seconds"
