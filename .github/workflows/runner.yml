@@ -53,7 +53,7 @@ jobs:
          run: cp ErfanGSIs/output/*Aonly*.txt Aonly.txt
 
        - name: Upload to SF & Send build info to Telegram
-          run: |
+         run: |
               cd ErfanGSIs/output
               expect -c "
               spawn sftp pything@frs.sourceforge.net
