@@ -41,36 +41,8 @@ sudo ./ErfanGSIs/url2GSI.sh $ROM_LINK Generic:$ROM_GENERIC
 
     # SourceForge
     export dateup=`date +%Y%m%d`
-    export SFDIR='cd /home/pfs/project/yumi-project/gsi/Generic/$ROM_GNERIC/$DEVICE/$dateup/'
-
-    expect -c "
-    spawn sftp pything@frs.sourceforge.net
-    expect \"yes/no\"
-    send \"yes\r\"
-    expect \"Password\"
-    send \"${{ secrets.PASSWORD }}\r\"
-    expect \"sftp> \"
-    send \"$SFDIR\r\"
-    set timeout -1
-    send \"put $ROM_GENERIC-Aonly-$sourcever2-$date2-ErfanGSI-YuMiGSI.zip\r\"
-    expect \"Uploading\"
-    expect \"100%\"
-    expect \"sftp>\"
-    interact"
-
-    expect -c "
-    spawn sftp ruiii@frs.sourceforge.net
-    expect \"Password\"
-    send \"${{ secrets.PASSWORD }}\r\"
-    expect \"sftp> \"
-    send \"$SFDIR\r\"
-    set timeout -1
-    send \"put $ROM_GENERIC-AB-$sourcever2-$date2-ErfanGSI-YuMiGSI.zip\r\"
-    expect \"Uploading\"
-    expect \"100%\"
-    expect \"sftp>\"
-    send \"bye\r\"
-    interact"
+    export TMPSFDIR='cd /home/pfs/project/yumi-project/gsi/Generic/$ROM_GNERIC/$DEVICE/$dateup/'
+    echo "::set-env name=SFDIR::$(echo $TMPSFDIR)"
 
     # Define temp var for SF_DOWNLOAD_A var
     export TMPA=`https://sourceforge.net/projects/yumi-project/files/gsi/Generic/$ROM_GENERIC/$DEVICE/$ROM_GENERIC-Aonly-$sourcever2-$date2-ErfanGSI-YuMiGSI.zip/download`
