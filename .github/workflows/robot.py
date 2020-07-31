@@ -13,10 +13,10 @@ cat = os.getenv('CAT_FILE')
 romlink = os.getenv('ROM_LINK')
 da = os.getenv('DOWNLOAD_A')
 dab = os.getenv('DOWNLOAD_AB')
-sfda = os.getenv('SF_DOWNLOAD_A')
-sfdab = os.getenv('SF_DOWNLOAD_AB')
 wsfa = os.getenv('WET_DOWNLOAD_A')
 wsfab = os.getenv('WET_DOWNLOAD_A')
+sfda = os.getenv('SF_DOWNLOAD_A')
+sfdab = os.getenv('SF_DOWNLOAD_AB')
 read = os.getenv('READ')
 
 with pyrogram.Client('bot', os.getenv('API_ID'), os.getenv('API_HASH'), bot_token=os.getenv('TOKEN')) as client:

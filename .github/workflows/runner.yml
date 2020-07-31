@@ -58,14 +58,11 @@ jobs:
               export dateup2=`date +%Y%m%d`
               echo "::set-env name=dateup::$(echo $dateup2)"
 
-              export TMPSFDIR=`cd //home/pfs/project/rui-ports/gsi/Generic/$ROM_GNERIC/$DEVICE/$dateup2`
-              echo "::set-env name=SFDIR::$(echo $TMPSFDIR)"
+              export SFDIR=`cd /home/pfs/project/yumi-project/gsi/Generic/$ROM_GNERIC/$DEVICE/$dateup2`
 
-              export TMPA=`https://sourceforge.net/projects/yumi-project/files/gsi/Generic/$ROM_GENERIC/$DEVICE/$ROM_GENERIC-Aonly-$sourcever2-$date2-ErfanGSI-YuMiGSI.zip/download`
-              echo "::set-env name=SF_DOWNLOAD_A::$(echo $TMPA)"
+              export SF_DOWNLOAD_A=`https://sourceforge.net/projects/yumi-project/files/gsi/Generic/$ROM_GENERIC/$DEVICE/$ROM_GENERIC-Aonly-$sourcever2-$date2-ErfanGSI-YuMiGSI.zip/download`
 
-              export TMPAB=`https://sourceforge.net/projects/yumi-project/files/gsi/Generic/$ROM_GENERIC/$DEVICE/$ROM_GENERIC-AB-$sourcever2-$date2-ErfanGSI-YuMiGSI.zip/download`
-              echo "::set-env name=SF_DOWNLOAD_AB::$(echo $TMPAB)"
+              export SF_DOWNLOAD_AB=`https://sourceforge.net/projects/yumi-project/files/gsi/Generic/$ROM_GENERIC/$DEVICE/$ROM_GENERIC-AB-$sourcever2-$date2-ErfanGSI-YuMiGSI.zip/download`
 
               cd ErfanGSIs/output
               expect -c "
