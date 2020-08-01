@@ -5,8 +5,8 @@ on: [push]
 env:
   ROM: Generic
   ROM_GENERIC: DirtyUnicorn
-  ROM_LINK: https://phoenixnap.dl.sourceforge.net/project/aman-builds//DirtyUnicorn/du_santoni-v14.5-20200720-1052-UNOFFICIAL.zip
-  DEVICE: santoni
+  ROM_LINK: https://drive.google.com/file/d/1ynt96psP4kWOV7-zSoduRTxQg1lMtoOt/view?usp=sharing
+  DEVICE: montana
   MIR: gof
   TZ: America/Sao_Paulo
   READ: This is Generic type.
@@ -58,11 +58,11 @@ jobs:
               export dateup2=`date +%Y%m%d`
               echo "::set-env name=dateup::$(echo $dateup2)"
 
-              export SFDIR=`cd /home/pfs/project/yumi-project/gsi/Generic/$ROM_GNERIC/$DEVICE/$dateup2`
+              export SFDIR=`cd /home/pfs/project/yumi-project/gsi/Generic/DirtyUnicorn/montana/20200831`
 
-              export SF_DOWNLOAD_A=`https://sourceforge.net/projects/yumi-project/files/gsi/Generic/$ROM_GENERIC/$DEVICE/$ROM_GENERIC-Aonly-$sourcever2-$date2-ErfanGSI-YuMiGSI.zip/download`
+              export SF_DOWNLOAD_A=`https://sourceforge.net/projects/yumi-project/files/gsi/Generic/DirtyUnicorn/$DEVICE/$ROM_GENERIC-Aonly-$sourcever2-$date2-ErfanGSI-YuMiGSI.zip/download`
 
-              export SF_DOWNLOAD_AB=`https://sourceforge.net/projects/yumi-project/files/gsi/Generic/$ROM_GENERIC/$DEVICE/$ROM_GENERIC-AB-$sourcever2-$date2-ErfanGSI-YuMiGSI.zip/download`
+              export SF_DOWNLOAD_AB=`https://sourceforge.net/projects/yumi-project/files/gsi/Generic/DirtyUnicorn/$DEVICE/$ROM_GENERIC-AB-$sourcever2-$date2-ErfanGSI-YuMiGSI.zip/download`
 
               cd ErfanGSIs/output
               expect -c "
