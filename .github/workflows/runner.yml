@@ -4,9 +4,9 @@ on: [push]
 
 env:
   ROM: Generic
-  ROM_GENERIC: DirtyUnicorn
-  ROM_LINK: https://www.googleapis.com/drive/v3/files/1ynt96psP4kWOV7-zSoduRTxQg1lMtoOt?alt=media&key=AIzaSyAPeiAtskDMGvYJqAUb00tTQ3P90ER-LP8
-  DEVICE: montana
+  ROM_GENERIC: ZenX-OS
+  ROM_LINK: https://svwh.dl.sourceforge.net/project/zenx-os//lavender/ZenX-OS-v1.7-Official-lavender-20200730-GApps.zip
+  DEVICE: lavender
   MIR: gof
   TZ: America/Sao_Paulo
   READ: This is Generic type.
@@ -58,11 +58,11 @@ jobs:
               export dateup2=`date +%Y%m%d`
               echo "::set-env name=dateup::$(echo $dateup2)"
 
-              export SFDIR=`cd /home/pfs/project/yumi-project/gsi/Generic/DirtyUnicorn/montana/20200831`
+              export SFDIR=`cd /home/pfs/project/yumi-project/gsi/Generic/ZenX-OS/lavender/20200831`
 
-              export SF_DOWNLOAD_A=`https://sourceforge.net/projects/yumi-project/files/gsi/Generic/DirtyUnicorn/$DEVICE/$ROM_GENERIC-Aonly-$sourcever2-$date2-ErfanGSI-YuMiGSI.zip/download`
+              export SF_DOWNLOAD_A=`https://sourceforge.net/projects/yumi-project/files/gsi/Generic/ZenX-OS/$DEVICE/$ROM_GENERIC-Aonly-$sourcever2-$date2-ErfanGSI-YuMiGSI.zip/download`
 
-              export SF_DOWNLOAD_AB=`https://sourceforge.net/projects/yumi-project/files/gsi/Generic/DirtyUnicorn/$DEVICE/$ROM_GENERIC-AB-$sourcever2-$date2-ErfanGSI-YuMiGSI.zip/download`
+              export SF_DOWNLOAD_AB=`https://sourceforge.net/projects/yumi-project/files/gsi/Generic/ZenX-OS/$DEVICE/$ROM_GENERIC-AB-$sourcever2-$date2-ErfanGSI-YuMiGSI.zip/download`
 
               cd ErfanGSIs/output
               expect -c "
