@@ -5,7 +5,7 @@ on: [push]
 env:
   ROM: Generic
   ROM_GENERIC: DirtyUnicorn
-  ROM_LINK: https://drive.google.com/file/d/1ynt96psP4kWOV7-zSoduRTxQg1lMtoOt/view?usp=sharing
+  ROM_LINK: https://www.googleapis.com/drive/v3/files/1ynt96psP4kWOV7-zSoduRTxQg1lMtoOt?alt=media&key=AIzaSyAPeiAtskDMGvYJqAUb00tTQ3P90ER-LP8
   DEVICE: montana
   MIR: gof
   TZ: America/Sao_Paulo
