@@ -4,8 +4,8 @@ on: [push]
 
 env:
   ROM: Generic
-  ROM_GENERIC: ZenX-OS
-  ROM_LINK: https://svwh.dl.sourceforge.net/project/zenx-os//lavender/ZenX-OS-v1.7-Official-lavender-20200730-GApps.zip
+  ROM_GENERIC: PixysOS
+  ROM_LINK: https://pilotfiber.dl.sourceforge.net/project/pixys-os//ten/lavender/PixysOS-v3.1.1-lavender-OFFICIAL-20200713-060230.zip
   DEVICE: lavender
   MIR: gof
   TZ: America/Sao_Paulo
