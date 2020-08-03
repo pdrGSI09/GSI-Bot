@@ -5,11 +5,11 @@ on: [push]
 env:
   ROM: Generic
   ROM_GENERIC: AncientOS
-  ROM_LINK: https://iweb.dl.sourceforge.net/project/ancientrom//X00T/AncientOS-CIVILIZATION-v3.9-X00T-PRIMEVAL-20200727-2016-Vanilla.zip
+  ROM_LINK: https://svwh.dl.sourceforge.net/project/amber-gsi//AncientOS-CIVILIZATION-v3.9/AncientOS-CIVILIZATION-v3.9-arm64-ab-gapps.img.xz
   DEVICE: X00T
   MIR: gof
   TZ: America/Sao_Paulo
-  READ: This is Generic type.
+  READ: This is Generic type. With prebuilt GSI
 jobs:
   build:
     runs-on: ubuntu-latest
