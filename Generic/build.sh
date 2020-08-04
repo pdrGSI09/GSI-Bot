@@ -13,7 +13,7 @@ sudo ./ErfanGSIs/url2GSI.sh $ROM_LINK Generic:$ROM_GENERIC
     SYNC_START=$(date +"%s")
     telegram -M "Generic ($ROM_GENERIC): Zipping output started"
 
-    export date2=`date +%Y%m%d%H%M`
+    export date2=`date +%Y%m%d`
     export sourcever2=`cat ./ErfanGSIs/ver`
     sudo chmod -R 777 ErfanGSIs/output
                
@@ -41,4 +41,4 @@ sudo ./ErfanGSIs/url2GSI.sh $ROM_LINK Generic:$ROM_GENERIC
 
     SYNC_END=$(date +"%s")
     SYNC_DIFF=$((SYNC_END - SYNC_START))
-    telegram -M "Generic ($ROM_GENERIC): Uploading completed successfully in $((SYNC_DIFF / 60)) minute(s) and $((SYNC_DIFF % 60)) seconds"
+    telegram -M "Generic ($ROM_GENERIC): Uploading completed successfully in $((SYNC_DIFF / 60)) minute(s) and $((SYNC_DIFF % 60)) seconds. Wait for SourceForge upload!"

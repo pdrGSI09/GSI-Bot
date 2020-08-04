@@ -3,13 +3,17 @@ name: GSI - Erfan
 on: [push]
 
 env:
-  ROM: Generic
+  ROM: Flyme
+  GENERIC_TYPE: 0
   ROM_GENERIC: AncientOS
-  ROM_LINK: https://svwh.dl.sourceforge.net/project/amber-gsi//AncientOS-CIVILIZATION-v3.9/AncientOS-CIVILIZATION-v3.9-arm64-ab-gapps.img.xz
-  DEVICE: X00T
+  ROM_LINK: https://download.meizu.com/Firmware/Flyme/16xs/8.20.8.4/cn_daily/20200804003619/e02f211f/update.zip
+  DLAONLYSF: https://sourceforge.net/projects/yumi-project/gsi/Flyme/meizu16Xs/20200804/Flyme-Aonly-9-20200804-ErfanGSI-YuMiGSI.zip/download
+  DLABSF: https://sourceforge.net/projects/yumi-project/gsi/Flyme/meizu16Xs/20200804/Flyme-AB-9-20200804-ErfanGSI-YuMiGSI.zip/download
+  SFDIRA: cd /home/pfs/project/yumi-project/gsi/Flyme/meizu16Xs/20200804
+  SFDIRAB: cd /home/pfs/project/yumi-project/gsi/Flyme/meizu16Xs/20200804
   MIR: gof
   TZ: America/Sao_Paulo
-  READ: This is Generic type. With prebuilt GSI
+  READ: Use <b>Disable HW Overlays ZIP</b> to avoid UI issues or related.
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -52,18 +56,8 @@ jobs:
        - name: Copy and rename A-Only build info
          run: cp ErfanGSIs/output/*Aonly*.txt Aonly.txt
 
-       - name: Upload to SF & Send build info to Telegram
+       - name: Upload to SF
          run: |
-
-              export dateup2=`date +%Y%m%d`
-              echo "::set-env name=dateup::$(echo $dateup2)"
-
-              export SFDIR=`cd /home/pfs/project/yumi-project/gsi/Generic/ZenX-OS/lavender/20200831`
-
-              export SF_DOWNLOAD_A=`https://sourceforge.net/projects/yumi-project/files/gsi/Generic/ZenX-OS/$DEVICE/$ROM_GENERIC-Aonly-$sourcever2-$date2-ErfanGSI-YuMiGSI.zip/download`
-
-              export SF_DOWNLOAD_AB=`https://sourceforge.net/projects/yumi-project/files/gsi/Generic/ZenX-OS/$DEVICE/$ROM_GENERIC-AB-$sourcever2-$date2-ErfanGSI-YuMiGSI.zip/download`
-
               cd ErfanGSIs/output
               expect -c "
               spawn sftp pything@frs.sourceforge.net
@@ -72,9 +66,9 @@ jobs:
               expect \"Password\"
               send \"${{ secrets.PASSWORD }}\r\"
               expect \"sftp> \"
-              send \"$SFDIR\r\"
+              send \"$SFDIRA\r\"
               set timeout -1
-              send \"put *Aonly*.zip\r\"
+              send \"put *Aonly*.7z\r\"
               expect \"Uploading\"
               expect \"100%\"
               expect \"sftp>\"
@@ -84,7 +78,7 @@ jobs:
               expect \"Password\"
               send \"${{ secrets.PASSWORD }}\r\"
               expect \"sftp> \"
-              send \"$SFDIR\r\"
+              send \"$SFDIRAB\r\"
               set timeout -1
               send \"put *AB*.zip\r\"
               expect \"Uploading\"
@@ -101,4 +95,5 @@ jobs:
               API_HASH: ${{ secrets.API_HASH }}
 
          run: |
-              python .github/workflows/robot.py
+              chmod +x upload.sh
+              ./upload.sh
