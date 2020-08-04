@@ -15,8 +15,6 @@ da = os.getenv('DOWNLOAD_A')
 dab = os.getenv('DOWNLOAD_AB')
 wsfa = os.getenv('WET_DOWNLOAD_A')
 wsfab = os.getenv('WET_DOWNLOAD_A')
-dasf = os.getenv('DLAONLYSF')
-dabsf = os.getenv('DLABSF')
 read = os.getenv('READ')
 
 with pyrogram.Client('bot', os.getenv('API_ID'), os.getenv('API_HASH'), bot_token=os.getenv('TOKEN')) as client:
@@ -29,8 +27,8 @@ with pyrogram.Client('bot', os.getenv('API_ID'), os.getenv('API_HASH'), bot_toke
 
 <code>{cat}</code>
 
-<b>- Download A-Only:</b> <a href="{da}">GoFile</a> | <a href="{wsfa}">Wet</a> | <a href="{dasf}">SourceForge</a> 
-<b>- Download A/B:</b> <a href="{dab}">GoFile</a> | <a href="{wsfab}">Wet</a> | <a href="{dabsf}">SourceForge</a>
+<b>- Download A-Only:</b> <a href="{da}">GoFile</a> | <a href="{wsfa}">Wet</a> 
+<b>- Download A/B:</b> <a href="{dab}">GoFile</a> | <a href="{wsfab}">Wet</a>
 
 <b>- Thanks to:</b> <a href="https://github.com/yukosky/ErfanGSIs/graphs/contributors">Contributors List</a>
 
