@@ -3,10 +3,10 @@ name: GSI - Erfan
 on: [push]
 
 env:
-  ROM: Flyme
-  GENERIC_TYPE: 0
-  ROM_GENERIC: AncientOS
-  ROM_LINK: https://download.meizu.com/Firmware/Flyme/16xs/8.20.8.4/cn_daily/20200804003619/e02f211f/update.zip
+  ROM: Generic
+  GENERIC_TYPE: 1
+  ROM_GENERIC: PixysOS
+  ROM_LINK: https://netactuate.dl.sourceforge.net/project/pixys-os//ten/ginkgo/PixysOS-v3.1.1-ginkgo-OFFICIAL-20200718-200121.zip
   MIR: gof
   TZ: America/Sao_Paulo
   READ: Nothing to warn, info or related.
