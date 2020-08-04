@@ -7,8 +7,8 @@ env:
   GENERIC_TYPE: 0
   ROM_GENERIC: AncientOS
   ROM_LINK: https://download.meizu.com/Firmware/Flyme/16xs/8.20.8.4/cn_daily/20200804003619/e02f211f/update.zip
-  DLAONLYSF: https://sourceforge.net/projects/yumi-project/gsi/Flyme/meizu16Xs/20200804/Flyme-Aonly-9-20200804-ErfanGSI-YuMiGSI.zip/download
-  DLABSF: https://sourceforge.net/projects/yumi-project/gsi/Flyme/meizu16Xs/20200804/Flyme-AB-9-20200804-ErfanGSI-YuMiGSI.zip/download
+  DLAONLYSF: https://sourceforge.net/projects/yumi-project/gsi/Flyme/meizu16Xs/20200804/Flyme-Aonly-10-20200804-ErfanGSI-YuMiGSI.zip/download
+  DLABSF: https://sourceforge.net/projects/yumi-project/gsi/Flyme/meizu16Xs/20200804/Flyme-AB-10-20200804-ErfanGSI-YuMiGSI.zip/download
   SFDIRA: cd /home/pfs/project/yumi-project/gsi/Flyme/meizu16Xs/20200804
   SFDIRAB: cd /home/pfs/project/yumi-project/gsi/Flyme/meizu16Xs/20200804
   MIR: gof
